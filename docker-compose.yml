@@ -30,7 +30,3 @@ services:
       MARIADB_USER: ${DB_USERNAME}
     volumes:
       - ./docker/mysql:/docker-entrypoint-initdb.d
-  
-  networks:
-    localnet:
-      driver: bridge
