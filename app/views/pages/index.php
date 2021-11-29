@@ -9,37 +9,37 @@
     <link rel="stylesheet" href="../../public/css/css.css">
 </head>
 
-<body>
-    <p>lol<p>
+<!-- http://localhost/views/pages/ -->
 
-            <h2>Header:</h2>
-            <?php
+<body>
+    <h2>Header:</h2>
+    <?php
 include "../partials/header.php";
 ?>
 
-            <section>
-
-                <h1>Posts and stuff!</h1>
-
-                <h2>Profile:</h2>
-                <?php
+    <h2>Profile:</h2>
+    <?php
 include "../partials/profile.php";
 ?>
 
-                <h2>Posts:</h2>
-                <?php
+    <h2>Posts:</h2>
+    <?php
 include "../partials/post.php";
-
 ?>
 
-<?php
+    <?php
 include "../partials/postForm.php";
-
 ?>
 
-            </section>
+    <div id="loginPartialContainer" class="hidden">
+        <section>
+            <p>You need to log in! <span id="closeLoginPartialContainer">X</span></p>
+            <?php include "../partials/loginPartial.php"; ?>
+        </section>
+    </div>
 
-            <script src="../../public/js/test.js"></script>
+
+    <script src="../../public/js/test.js"></script>
 </body>
 
 </html>
