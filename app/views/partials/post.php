@@ -1,4 +1,4 @@
-<section>
+<div>
     <div>
         <ul>
             <!-- Make these into buttons? -->
@@ -8,7 +8,7 @@
             <li>laugh 123k</li>
             <li>Glimma-leaf: 14</li>
             <li>
-                <a href="#"><img src="#" alt="" width="100" height="100"></a>
+                <a href="#"><img src="../../public/assets/grumpy.jpeg" alt="" width="100" height="100"></a>
                 <button>Settings</button>
             </li>
         </ul>
@@ -18,4 +18,4 @@
     </div>
     <button>Read more</button>
     <small>Posted on 12/12/2001</small>
-</section>
+</div>

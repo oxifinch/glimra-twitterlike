@@ -1,6 +1,6 @@
 <section>
     <header>
-    <a href="#"><img src="#" alt="" width="100" height="100"></a>
+        <a href="#"><img src="../../public/assets/grumpy.jpeg" alt="" width="100" height="100"></a>
         <ul>
             <li>
                 <h3>@someone</h3>
@@ -19,20 +19,20 @@
             <li>Smile 134</li>
             <li>Following:</li>
             <li>
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
             </li>
         </ul>
         <ul>
             <li>Masses 123</li>
             <li>Glimmers</li>
             <li>
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
-                <img src="#" alt="" width="100" height="100">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
+                <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
             </li>
         </ul>
         <ul>
