@@ -15,7 +15,7 @@
             <small hidden>Password incorrect</small>
         </li>
         <li>
-            <a href="#">Login</a>
+            <a href="#">Register</a>
         </li>
         <li>
             <p>Already have an account? <a href="login.php">login!</a></p>
