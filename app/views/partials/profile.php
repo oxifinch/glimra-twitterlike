@@ -8,7 +8,8 @@
             <li>Mr Someone</li>
             <li>Shared his gold 12/12/2001</li>
         </ul>
-        <a href="#">Follow/setting!</a>
+        <a href="#">Follow</a>
+        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
     </header>
     <div>
         <h4>Bio</h4>
@@ -16,7 +17,7 @@
     </div>
     <div>
         <ul>
-            <li>Smile 134</li>
+            <li><i class="fa fa-eye" aria-hidden="true"></i>: 134</li>
             <li>Following:</li>
             <li>
                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
@@ -26,7 +27,7 @@
             </li>
         </ul>
         <ul>
-            <li>Masses 123</li>
+            <li><i class="fa fa-users" aria-hidden="true"></i>: 123</li>
             <li>Glimmers</li>
             <li>
                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
@@ -36,7 +37,7 @@
             </li>
         </ul>
         <ul>
-            <li>Leaf 12k</li>
+            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i>: 12k</li>
             <li>Total glimes:</li>
         </ul>
     </div>
