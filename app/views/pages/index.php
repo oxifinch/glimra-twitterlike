@@ -29,6 +29,12 @@ include "../partials/profile.php";
                 <h2>Posts:</h2>
                 <?php
 include "../partials/post.php";
+
+?>
+
+<?php
+include "../partials/postForm.php";
+
 ?>
 
             </section>

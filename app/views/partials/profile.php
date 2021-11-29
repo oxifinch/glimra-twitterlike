@@ -1,6 +1,6 @@
 <section>
     <header>
-        <img src="#" alt="" width="100" height="100">
+    <a href="#"><img src="#" alt="" width="100" height="100"></a>
         <ul>
             <li>
                 <h3>@someone</h3>
@@ -8,7 +8,7 @@
             <li>Mr Someone</li>
             <li>Shared his gold 12/12/2001</li>
         </ul>
-        <button>Follow/setting!</button>
+        <a href="#">Follow/setting!</a>
     </header>
     <div>
         <h4>Bio</h4>

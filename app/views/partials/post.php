@@ -8,7 +8,7 @@
             <li>laugh 123k</li>
             <li>Glimma-leaf: 14</li>
             <li>
-                <img src="#" alt="" width="100" height="100">
+                <a href="#"><img src="#" alt="" width="100" height="100"></a>
                 <button>Settings</button>
             </li>
         </ul>
