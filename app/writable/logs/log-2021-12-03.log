@@ -1,0 +1,20 @@
+CRITICAL - 2021-12-03 01:26:38 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(688): CodeIgniter\Model->builder()
+#2 /app/app/Models/PostStatus.php(11): CodeIgniter\Model->__get('load')
+#3 /app/app/Controllers/PostController.php(11): App\Models\PostStatus->__construct()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-03 01:26:38 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(688): CodeIgniter\Model->builder()
+#2 /app/app/Models/PostStatus.php(11): CodeIgniter\Model->__get('load')
+#3 /app/app/Controllers/PostController.php(11): App\Models\PostStatus->__construct()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

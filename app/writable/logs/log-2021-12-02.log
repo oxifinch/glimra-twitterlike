@@ -1,0 +1,344 @@
+CRITICAL - 2021-12-02 09:15:32 --> syntax error, unexpected token "}", expecting ";"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 09:16:09 --> Declaration of App\Controllers\BaseController::initController(App\Controllers\Rerface $response, Psr\Log\LoggerInterface $logger) must be compatible with CodeIgniter\Controller::initController(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, Psr\Log\LoggerInterface $logger)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-02 11:39:21 --> syntax error, unexpected token "}", expecting "," or ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render('index', Array, true)
+#2 /app/app/Controllers/Home.php(9): view('index')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:00:22 --> Undefined variable $allPosts
+#0 /app/app/Views/index.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/app/app/Views/...', 25)
+#1 /app/system/View/View.php(214): include('/app/app/Views/...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render('index', Array, true)
+#4 /app/app/Controllers/Home.php(9): view('index')
+#5 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 12:05:05 --> syntax error, unexpected token "private"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:05:46 --> syntax error, unexpected token ";", expecting "]"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:05:59 --> syntax error, unexpected token ";", expecting "]"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:07:09 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-02 12:08:08 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:08:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:19:57 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:19:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:20:14 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:20:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:28:55 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:28:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:39:00 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:39:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:39:13 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:39:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 12:40:35 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:40:52 --> syntax error, unexpected identifier "view"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:41:24 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:42:19 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:44:20 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:47:45 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:49:03 --> syntax error, unexpected token "return"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 12:50:43 --> syntax error, unexpected token "}", expecting ";"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Contro...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 /app/system/CodeIgniter.php(789): class_exists('\\App\\Controller...', true)
+#4 /app/system/CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-02 12:52:31 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:52:31 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:54:00 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:54:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:56:39 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:56:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 12:57:38 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 12:57:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 13:13:58 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 13:13:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 13:16:54 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 13:16:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 13:17:46 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 13:17:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-02 13:18:40 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-02 13:18:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /app/system/Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 /app/system/BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 /app/app/Controllers/PostController.php(12): CodeIgniter\BaseModel->findAll()
+#5 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-02 13:28:25 --> syntax error, unexpected variable "$this", expecting "function" or "const"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Models...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 /app/app/Controllers/PostController.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 13:29:25 --> syntax error, unexpected token "protected"
+#0 /app/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('/app/app/Models...')
+#1 /app/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Post...')
+#2 /app/app/Controllers/PostController.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Post...')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-02 13:29:44 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(688): CodeIgniter\Model->builder()
+#2 /app/app/Models/PostStatus.php(11): CodeIgniter\Model->__get('load')
+#3 /app/app/Controllers/PostController.php(11): App\Models\PostStatus->__construct()
+#4 /app/system/CodeIgniter.php(824): App\Controllers\PostController->get_all_posts()
+#5 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
