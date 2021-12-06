@@ -6,8 +6,6 @@ use CodeIgniter\Model;
 
 class PostStatus extends Model
 {
-
-    {
         protected $db;
     
         public function __construct()
@@ -15,14 +13,10 @@ class PostStatus extends Model
             $this->db = db_connect();
         }
     
-        public function insert_status() {
-            $this->db->insert('user_contacts', array(
-                "name" => $name,
-                "address" => $address,
-                "email" => $email,
-            ));  
+        public function insert_status($data) {
+         $this->db->query('INSERT into post values (12, $data["text_content"])');
         }
-    }
+    
 
     // protected $table      = 'post';
     // protected $primaryKey = 'post_id';

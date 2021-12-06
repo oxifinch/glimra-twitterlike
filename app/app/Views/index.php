@@ -18,7 +18,7 @@
 		}
 	?>
 	<h1>Write a status!</h1>
-	<form action="<?php base_url("post_status") ?>" method="post">
+	<form action="postController/create_a_post" method="post">
 	<input type="text" name="new_status" id="#">
 	<input type="submit">
 	<a href="<?= base_url("get_statuses")?>">Load all posts!</a>
