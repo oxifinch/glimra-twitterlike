@@ -17,3 +17,11 @@
   }
 }
 
+@function set-icon-color($color) {
+  @if (lightness($color) > 80) {
+    @return map-get($theme-colors, "base");
+  }
+  @else {
+    @return map-get($theme-colors, "white");
+  }
+}

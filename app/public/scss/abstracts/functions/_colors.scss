@@ -1,7 +1,0 @@
-// Function to grab color from theme-color
-@function color($key) {
-    @if map-has-key($theme-colors, $key) {
-      @return map-get($theme-colors, $key);
-    }}
-
-    // background-color: color("danger");

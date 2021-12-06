@@ -59,6 +59,13 @@ $size in $btn-padding {
 }
 
 
+@each $name,
+$color in $theme-colors {
+	.icon-color-#{$name} {
+		color: var(--#{$name}-color);
+	}
+}
+
 .ion-icon {
 	display: flex;
 	justify-content: center;

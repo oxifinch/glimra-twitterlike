@@ -3,9 +3,9 @@ $theme-colors: (
     "white": #FBFBFB,
     "base": #090808,
     "primary" : #CCD34C,
-    "secondary": #EAB80A ,
+    "secondary": #DC9013,
     "tertiary": #99A03E ,
-    "quaternary": #DC9013,
+    "quaternary": #EAB80A,
     "danger": #B43A1A,
     "warning": #8D131D,
     "info": #38A5F8,
@@ -21,6 +21,13 @@ $btn-padding: (
     "large": 2rem,
 ) !default;
 
+$font-size: (
+    "samll": 0.5rem,
+    "standard": 1rem,
+    "medium": 1.5rem,
+    "large": 2,
+    "extra-large": 3rem,
+) !default;
 
 // -- Container -- 
 $container-width: 1200 !default;
