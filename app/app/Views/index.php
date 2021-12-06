@@ -13,10 +13,6 @@
 
 <body>
 
-<section>sdoxzmvnklsdfiodskfkllsdfopsdjgisdioofjisdfiopsdaiohpjfsodifhasdfohwadöoifihasdiofwehkjgih</section>
-
-<a href="dfs" class="btn btn-danger">sdf</a>
-
     <h2>Header:</h2>
     <?=
 $this->include("/partials/header");
