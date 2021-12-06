@@ -1,0 +1,60 @@
+// -- COLORS --
+$theme-colors: (
+    "white": pink,
+    "base": green,
+    "primary" : green,
+    "secondary": blue,
+    "success": #2AA39A,
+    "danger": blue,
+    "warning": #F8B425,
+    "info": #38A5F8,
+    "light": #f8f8fa,
+    "dark": #575c62,
+    "muted": #EDECF1
+) !default;
+
+$btn-padding: (
+    "none": initial,
+    "small": 0.5rem,
+    "medium": 1rem,
+    "large": 2rem,
+) !default;
+
+
+// -- Container -- 
+$container-width: 1200 !default;
+
+// -- GRID --  
+$grid-cols: 12 !default;
+
+// BREAKPOINTS
+$grid-bp-small: 576 !default;
+$grid-bp-medium: 768 !default;
+$grid-bp-large: 992 !default;
+$grid-bp-xlarge: 1200 !default;
+
+// GRID MAP
+$map-grid-props: (
+    '': 0,
+    '-small': $grid-bp-small,
+    '-medium': $grid-bp-medium,
+    '-large': $grid-bp-large,
+    '-xlarge': $grid-bp-xlarge,
+)!default;
+
+
+// -- TYPOGRAPHY -- 
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-base: var(--font-sans-serif) !default;
+$font-family-code: var(--font-monospace) !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+
+// -- BORDER RADIUS -- 
+$border-radius: 0.2rem !default;
+
