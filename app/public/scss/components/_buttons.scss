@@ -66,16 +66,23 @@ $color in $theme-colors {
 	}
 }
 
-.ion-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.unclickable-icons {
+    color: color("tertiary");
 }
 
-.icon-padding-right {
-	padding-left: 0.5rem;
+.clickable-icons {
+    color: color("secondary");
 }
 
-.icon-padding-left {
-	padding-right: 0.5rem;
+.reaction-icons {
+    color: color("light");
 }
+
+.active-reaction-icon {
+    color: color("secondary");
+}
+
+.menu-icons {
+    color: color("menu");
+}
+

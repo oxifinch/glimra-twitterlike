@@ -1,7 +1,7 @@
 .module-container {
-    margin: 0 1rem;
-    padding: 1rem;
-    background-color: red;
+    // margin: 0 1rem;
+    // padding: 1rem;
+    // background-color: red;
 
     .profile-header {
         margin-bottom: space("medium");
@@ -37,7 +37,10 @@
             .list-container {
                 ul {
                     .profile-name {
-                        font-size: size("standard");
+                        h4 {
+                            margin-bottom: 0;  
+                        }
+                        font-size: size("large");
                     }
 
                     .username {
@@ -45,9 +48,22 @@
                     }
 
                     .join-date {
+                        margin-top: space("small");
                         font-size: size("small");
                     }
+
+                    .commenter-profile-name {
+                        h4 {
+                            margin-bottom: 0;  
+                        }
+                        font-size: size("large");
+                    }
+    
+                    .commenter-username {
+                        font-size: size("large");
+                    }
                 }
+                
             }
 
             .header-aside {
@@ -58,11 +74,23 @@
 
     .profile-bio {
         margin-bottom: space("medium");
+        .bio-heading {
+            font-size: size("extra-large");
+        }
+        .bio-text {
+            font-size: size("standard");
+        }
     }
 
-    .profile-stats {
-        .follower-count {}
-
+    .profile-reactions-container {    
+        .follower-count, .react-count {
+            .follower-icon {
+                font-size: size("extra-large");
+            }
+            .follower-text {
+                font-size: size("small");
+            }
+        }
         .react-count {
             margin-left: 20%;
         }
@@ -95,7 +123,12 @@
 }
 
 #alterPostContent {
+    color: color("secondary");
     white-space: nowrap;
+}
+
+.post-date {
+    color: color("muted");
 }
 
 @media screen and (min-width: 700px) {

@@ -10,10 +10,10 @@
                                 <div class="list-container">
                                     <ul class="remove-liststyle">
                                         <li class="profile-name">
-                                            <h3>@someone</h3>
+                                            <h4>@someone</h4>
                                         </li>
                                         <li class="username">Mr Someone</li>
-                                        <li class="join-date"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Joined: 12/12/2001
+                                        <li class="join-date"><i class="unclickable-icons fa fa-calendar-check-o" aria-hidden="true"></i> Joined: 12/12/2001
                                         </li>
                                     </ul>
                                 </div>
@@ -25,10 +25,9 @@
                 </header>
 
                 <section class="profile-bio">
-                    <h4>Bio</h4>
-                    <p>Why doesn't coool work here?!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ab hic, eaque earum architect! sit
-                        amet
+                    <h4 class="bio-heading">Bio</h4>
+                    <p class="bio-text">Why doesn't coool work here?!
+                    
                         consectetur adipisicing elit. Quia ab hic, eaque earum architect! sit amet consectetur
                         adipisicing elit.
                         Quia ab hic, eaque earum architect! sit amet consectetur adipisicing elit. Quia ab hic, eaque
@@ -36,21 +35,21 @@
                         architect!</p>
                 </section>
 
-                    <div class="profile-stats container-fluid">
+                    <div class="profile-reactions-container container-fluid">
                         <div class="row">
                         <ul class="follower-count remove-liststyle">
-                            <li><i class="fa fa-users" aria-hidden="true"></i>: 123</li>
-                            <li>Glimmers:</li>
-                            <li>
+                            <li  class="follower-icon"><i class="unclickable-icons fa fa-users" aria-hidden="true"></i><b><span> 123</span></b></li>
+                            <li class="follower-text" >Glimmers</li>
+                            <!-- <li>
                                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
                                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
                                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
                                 <img src="../../public/assets/grumpy.jpeg" alt="" width="20" height="20">
-                            </li>
+                            </li> -->
                         </ul>
-                        <ul class=" react-count remove-liststyle">
-                            <li><i class="fa fa-thumbs-up" aria-hidden="true"></i>: 12k</li>
-                            <li>Total glimes:</li>
+                        <ul class="react-count remove-liststyle">
+                            <li  class="follower-icon" ><i class="unclickable-icons fa fa-thumbs-up" aria-hidden="true"></i><b><span> 12k</span></b></li>
+                            <li class="follower-text" >Total glimes</li>
                         </ul>
                     </div>
                 </div>

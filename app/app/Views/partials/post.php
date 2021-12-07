@@ -9,12 +9,12 @@
                     <ul class="remove-liststyle">
                         <li class="username">Mr Someone</li>
                         <li class="profile-name">
-                            <h3>@someone</h3>
+                            <h4>@someone</h4>
                         </li>
                     </ul>
                 </div>
                 <div class="header-aside">
-                    <small>Posted on 12/12/2001</small>
+                    <small class="post-date">Posted on 12/12/2001</small>
                 </div>
             </div>
             <!-- <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a> -->
@@ -37,13 +37,13 @@
         <div class="reaction-container container-fluid">
             <div class="row">
                 <div class="reaction-list">
-                    <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i>: 356</a>
-                    <a href="#"><i class="fa fa-smile-o" aria-hidden="true"></i>: 13</a>
-                    <a href="#"><i class="fa fa-frown-o" aria-hidden="true"></i>: 123k</a>
-                    <a href="#"><i class="fa fa-leaf" aria-hidden="true"></i>: 14</a>
+                    <a href="#"><i class="reaction-icons fa fa-thumbs-up" aria-hidden="true"></i>: 356</a>
+                    <a href="#"><i class="reaction-icons fa fa-smile-o" aria-hidden="true"></i>: 13</a>
+                    <a href="#"><i class="reaction-icons fa fa-frown-o" aria-hidden="true"></i>: 123k</a>
+                    <a href="#"><i class="reaction-icons fa fa-leaf" aria-hidden="true"></i>: 14</a>
                 </div>
                 <div class="post-option">
-                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>dsf</a>
+                    <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

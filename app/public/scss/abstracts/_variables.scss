@@ -6,13 +6,14 @@ $theme-colors: (
     "secondary": #DC9013,
     "tertiary": #99A03E ,
     "quaternary": #EAB80A,
+    "menu": #E5EB7C,
     "background": #EBF1A4,
     "danger": #B43A1A,
     "warning": #8D131D,
     "info": #38A5F8,
     "light": #C1BABA,
     "dark": #5A5856,
-    "muted": #EDECF1
+    "muted": #707070
 ) !default;
 
 $btn-padding: (
@@ -23,17 +24,18 @@ $btn-padding: (
 ) !default;
 
 $font-size: (
-    "small": 0.8rem,
+    "small": 0.75rem,
     "standard": 1rem,
-    "medium": 1.5rem,
-    "large": 2,
-    "extra-large": 3rem,
+    "large":  1.25rem,
+    "extra-large": 1.5rem,
 ) !default;
 
 $element-spacing: (
     "small": 0.2rem,
     "standard": 0.5rem,
     "medium": 1rem,
+    "large": 1.25rem,
+    "extra-large": 1.6rem,
 ) !default;
 // -- Container -- 
 $container-width: 1200 !default;
