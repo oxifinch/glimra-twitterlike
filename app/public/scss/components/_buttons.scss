@@ -1,9 +1,10 @@
 .btn {
 	display: inline-block;
 	border-radius: $border-radius;
-	padding: 0.5rem 1rem;
+	padding: 0.3rem 1.5rem;
 	background-color: var(--primary-color);
 	color: var(--white);
+	box-shadow: 1px 3px 4px color("tertiary");
 }
 
 @each $name,
@@ -33,7 +34,7 @@ $color in $theme-colors {
 @each $name,
 $size in $btn-padding {
 	.btn-padding-#{$name} {
-		padding: calc(#{$size} / 2) $size;
+		padding: calc(#{$size} / 4) $size;
 
 		// Fallback icon buttons
 		.icon-padding-right {

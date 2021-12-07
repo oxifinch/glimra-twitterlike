@@ -18,9 +18,10 @@ $theme-colors: (
 
 $btn-padding: (
     "none": initial,
-    "small": 0.5rem,
-    "medium": 1rem,
-    "large": 2rem,
+    "extra-small": 0.5rem,
+    "small": 1rem,
+    "medium": 1.5rem,
+    "large": 3rem,
 ) !default;
 
 $font-size: (
@@ -72,5 +73,5 @@ $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 
 
 // -- BORDER RADIUS -- 
-$border-radius: 0.2rem !default;
+$border-radius: 4px !default;
 
