@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <section class="profile-container">
+            <section class="module-container">
 
                 <header class="profile-header">
                             <div class="profile-info">
-                                <a href="#" class="image-container"><img src="assets/sadman.jpeg" alt="" width="100"
+                                <a href="#" class="image-container user-avatar"><img src="assets/sadman.jpeg" alt="" width="100"
                                         height="100"></a>
                                 <div class="list-container">
                                     <ul class="remove-liststyle">
@@ -17,7 +17,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="submit-container">
+                                <div class="header-aside">
                                     <a class="submit-task btn btn-secondary" href="#">Follow</a>
                                 </div>
                             </div>

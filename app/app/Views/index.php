@@ -43,6 +43,30 @@
     </div>
 
     <!-- <script src="../../public/js/test.js"></script> -->
+    
+    
+    <script>
+const alterPostContent = document.getElementById("alterPostContent");
+
+function extendText() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    alterPostContent.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    alterPostContent.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+alterPostContent.addEventListener("click", extendText)
+</script>
+
 </body>
 
 </html>
