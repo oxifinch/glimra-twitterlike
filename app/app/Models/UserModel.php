@@ -1,9 +1,4 @@
 <?php
-# TODO
-# 1. connect to db
-# 2. check if username already exists
-# 3. add user if not
-
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -14,6 +9,7 @@ class UserModel extends Model {
         $this->db = db_connect();
     }
 
+    // == GETTING USERS ==
     public function getAllUsers() {
         $query = $this->db->query("SELECT * FROM user");
         return $query->getResult();
@@ -25,19 +21,63 @@ class UserModel extends Model {
     }
 
     public function getUserByUsername($username) {
-        $query = $this->db->query("SELECT * FROM user WHERE username=$username");
+        $query = $this->db->query("SELECT * FROM user WHERE user_name=$username");
         return $query->getResult();
     }
 
-    public function createUser($data) {
-        if(!$data->username) {
-            // TODO: Handle errors correctly here.
-            echo "ERROR: Provide a username!";
+    // == CREATING USERS ==
+    public function createUser($username, $password) {
+        // TODO: Proper error handling
+        if(!$username || !$password) {
+            echo "[ERROR] Provide a username!";
         }
 
-        $query = $this->db->query("INSERT INTO user 
-            (username, password)
-            VALUES ('$data->username', '$data->password')");
+        $display_name = $username;
+        $query = $this->db->query(
+            "INSERT INTO user 
+            (user_name, display_name, password)
+            VALUES ('$username', '$display_name', '$password')"
+        );
+        return $query->getResult();
+    }
+
+    // == UPDATING USER INFO ==
+    public function updateUserDisplayName($data) {
+        // TODO: Proper error handling
+        if(!$data->id) {
+            echo "[ERROR] You did not provide a user ID!";
+        }
+        if(!$data->new_display_name) {
+            echo "[ERROR] You did not provide a new display name!";
+        }
+
+        $query = $this->db->query(
+            "UPDATE user 
+            SET display_name = '$data->new_display_name' 
+            WHERE id = $data->id;"
+        );
+
+        // TODO: Check if query actually went through before creating
+        // display_name_change
+        return $query->getResult();
+    }
+
+    public function updateUserPassword($data) {
+        // TODO: Proper error handling
+        if(!$data->id) {
+            echo "[ERROR] You did not provide a user ID!";
+        }
+        if(!$data->new_password) {
+            echo "[ERROR] You did not provide a new password!";
+        }
+
+        $query = $this->db->query(
+            "UPDATE user 
+            SET password = '$data->new_password'
+            WHERE id = $data->id;"
+        );
+        // TODO: Encrypt password maybe?
+        // TODO: Create password_change 
         return $query->getResult();
     }
 }
