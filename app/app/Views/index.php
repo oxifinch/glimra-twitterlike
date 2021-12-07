@@ -12,17 +12,15 @@
 </head>
 
 <body>
-
     <!-- <h2>Header:</h2> -->
-    <?=
-$this->include("/partials/header");
-?>
+
 
     <h2>Profile:</h2>
     <?=
     $this->include("/partials/profileBig");
 ?>
 
+<p>WORK WORK WORK...</p>
 <h2>Profile small!:</h2>
     <?=
     $this->include("/partials/profileSmall");
@@ -44,7 +42,7 @@ $this->include("/partials/header");
         </section>
     </div>
 
-    <script src="../../public/js/test.js"></script>
+    <!-- <script src="../../public/js/test.js"></script> -->
 </body>
 
 </html>

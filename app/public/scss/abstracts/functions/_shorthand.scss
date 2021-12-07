@@ -1,14 +1,24 @@
 // Function to grab color from theme-color
 @function color($key) {
-    @if map-has-key($theme-colors, $key) {
-      @return map-get($theme-colors, $key);
-    }}
+  @if map-has-key($theme-colors, $key) {
+    @return map-get($theme-colors, $key);
+  }
+}
 
-    // background-color: color("danger");
+// background-color: color("danger");
 
-    @function size($key) {
-        @if map-has-key($font-size, $key) {
-          @return map-get($font-size, $key);
-        }}
+@function size($key) {
+  @if map-has-key($font-size, $key) {
+    @return map-get($font-size, $key);
+  }
+}
 
-    // font-size: size("extra-large");
+@function space($key) {
+  @if map-has-key($element-spacing, $key) {
+    @return map-get($element-spacing, $key);
+  }
+}
+
+// font-size: size("extra-large");
+
+// font-size: size("extra-large");

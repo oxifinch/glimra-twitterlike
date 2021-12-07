@@ -1,0 +1,69 @@
+.profile-container {
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: red;
+
+    .profile-header {
+        margin-bottom: space("medium");
+        .profile-info {
+            display: flex;
+            .image-container {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                cursor: pointer;
+                margin-right: 1rem;
+
+                img {
+                    background-color: blue;
+                    // position: absolute;
+                    // top: 0;
+                    // left: 0;
+                    // height: 100%;
+                    // width: auto;
+                    // object-fit: cover;
+                }
+            }
+
+            .list-container {
+                ul {
+                    .profile-name {
+                        font-size: size("standard");
+                    }
+
+                    .username {
+                        font-size: size("standard");
+                    }
+
+                    .join-date {
+                        font-size: size("small");
+                    }
+                }
+            }
+            .submit-container {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .profile-bio {
+        margin-bottom: space("medium");
+    }
+
+    .profile-stats {
+        .follower-count {
+        
+        }
+        .react-count {
+            margin-left: 20%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .profile-bio {
+        width: 70%;
+    }
+  }

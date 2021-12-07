@@ -23,13 +23,18 @@ $btn-padding: (
 ) !default;
 
 $font-size: (
-    "samll": 0.5rem,
+    "small": 0.8rem,
     "standard": 1rem,
     "medium": 1.5rem,
     "large": 2,
     "extra-large": 3rem,
 ) !default;
 
+$element-spacing: (
+    "small": 0.2rem,
+    "standard": 0.5rem,
+    "medium": 1rem,
+) !default;
 // -- Container -- 
 $container-width: 1200 !default;
 
