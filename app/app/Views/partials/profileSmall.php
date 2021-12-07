@@ -15,7 +15,7 @@
                 </ul>
             </div>
             <div class="header-aside">
-                <a class="submit-task btn btn-secondary" href="#">Follow</a>
+                <b>    <b><a class="submit-task btn btn-secondary follow-btn" href="#">Follow</a></b></b>
             </div>
         </div>
         <!-- <a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a> -->

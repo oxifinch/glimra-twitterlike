@@ -118,19 +118,6 @@
     }
 }
 
-#more {
-    display: none;
-}
-
-#alterPostContent {
-    color: color("secondary");
-    white-space: nowrap;
-}
-
-.post-date {
-    color: color("muted");
-}
-
 @media screen and (min-width: 700px) {
     .profile-bio {
         width: 70%;

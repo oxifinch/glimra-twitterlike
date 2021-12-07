@@ -1,23 +1,25 @@
-<form action="#">
-    <h2>Login Glimma</h2>
-    <p hidden>You have tried too many times to login, try again in a few minutes </p>
-    <ul>
-        <li>
+<section class="form-container module-container-invisible">
+    <form action="#" class="form-content">
+        <div class="form-group">
+            <h2>Login Glimma</h2>
+            <p hidden>You have tried too many times to login, try again in a few minutes </p>
+        </div>
+
+        <div class="form-group">
             <label for="login">
-                <input type="text" id="login" name="#">
+                <input type="text" id="login" name="#" placeholder="Email or username">
             </label>
-            <small hidden>Username incorrect</small>
-        </li>
-        <li>
+            <!-- <small>Username incorrect</small> -->
+        </div>
+        <div class="form-group">
             <label for="register">
-                <input type="text" id="register" name="#">
+                <input type="text" id="register" name="#" placeholder="Password..">
             </label>
-            <small hidden>Password incorrect</small>
-        </li>
-        <li>
-            <a href="#">Login</a>
-        </li>
-        <li>
+            <!-- <small>Password incorrect</small> -->
+        </div>
+        <div class="form-group">
+            <b><a class="btn btn-secondary btn-padding-large loginbtn" href="#">Login</a></b>
             <a href="register.php">Or register</a>
-        </li>
-</form>
+        </div>
+    </form>
+</section>

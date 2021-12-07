@@ -54,9 +54,6 @@
         </section>
     </div>
 </section>
-
-    <!-- <script src="../../public/js/test.js"></script> -->
-    
     
     <script>
 const alterPostContent = document.getElementById("alterPostContent");

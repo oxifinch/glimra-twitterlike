@@ -1,3 +1,27 @@
 h1, h2, h3, h4, h5, h6, p {
     margin-bottom: space("standard");
 }
+b {
+    font-weight: 500;
+}
+
+#more {
+    display: none;
+}
+
+#alterPostContent {
+    color: color("secondary");
+    white-space: nowrap;
+}
+
+.post-date {
+    color: color("muted");
+}
+
+.loginbtn {
+	font-size: size("large");
+}
+
+.follow-btn {
+    font-size: size("standard");
+}
