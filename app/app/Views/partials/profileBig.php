@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="module-container-background">
     <div class="row">
         <div class="col-12">
             <section class="module-container">

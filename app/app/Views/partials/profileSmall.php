@@ -1,5 +1,5 @@
+<div class="module-container-background">
 <section class="module-container">
-
     <header class="profile-header">
         <div class="profile-info">
             <a href="#" class="image-container user-avatar"><img src="assets/sadman.jpeg" alt="" width="100"
@@ -33,3 +33,4 @@
         </div>
     </div>
 </section>
+</div>

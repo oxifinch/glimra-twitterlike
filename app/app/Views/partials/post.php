@@ -1,6 +1,5 @@
-<div class="container-fluid">
-
-    <section class="module-container">
+<section class="module-container-background">
+    <div class="module-container">
         <header class="profile-header">
             <div class="profile-info">
                 <a href="#" class="image-container commenter-avatar"><img src="assets/sadman.jpeg" alt="" width="100"
@@ -47,5 +46,5 @@
                 </div>
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>

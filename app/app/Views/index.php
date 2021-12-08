@@ -15,45 +15,38 @@
     <!-- <h2>Header:</h2> -->
 
     <h2>Profile:</h2>
-
-    <section class="module-container-background">
     <?=
     $this->include("/partials/profileBig");
 ?>
-</section>
-<h2>Profile small!:</h2>
 
-<section class="module-container-background">
+<h2>Profile small!:</h2>
 
     <?=
     $this->include("/partials/profileSmall");
 ?>
-</section>
 
 <h2>Posts:</h2>
 
-<section class="module-container-background">
 
     <?=
    $this->include("/partials/post");
 ?>
-</section>
 
 <h2>search, alt typing..!</h2>
-<section class="module-container-background">
+
     <?=
    $this->include("/partials/postForm");
 ?>
-</section>
 
-<section class="module-container-background">
+
+
     <div id="loginPartialContainer" class="hidden">
         <section>
             <p>You need to log in! <span id="closeLoginPartialContainer">X</span></p>
             <?= $this->include("/partials/loginPartial"); ?>
         </section>
     </div>
-</section>
+
     
     <script>
 const alterPostContent = document.getElementById("alterPostContent");

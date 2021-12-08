@@ -1,3 +1,4 @@
+<div class="module-container-background">
 <form class="sendMessageForm">
     <input type="text" class="" placeholder="Search after user" name="search" id="navSearch">
     <div class="sendMessageToolbar">
@@ -7,5 +8,5 @@
     </div>
     <!-- https://jakub-kozak.medium.com/how-to-open-the-native-camera-in-mobile-browsers-327820fa669a -->
 </form>
-
+</div>
 <!-- https://jsfiddle.net/coderatchet/p7zdrbvs/1/ -->
