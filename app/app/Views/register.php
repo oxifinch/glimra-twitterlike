@@ -15,7 +15,7 @@
    }
    echo "<hr>";
 ?>
-    <form action="registerSave" method="POST">
+    <form action="user/registerSave" method="POST">
         <label for="input-user_name">Username</label> 
         <input type="text" name="user_name" id="input-user_name" maxlength="30"><br>
         <label for="password">Password</label>
