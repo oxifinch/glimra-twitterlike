@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="module-container-background">
     <div class="row">
         <div class="col-12">
             <section class="module-container">
@@ -37,7 +37,7 @@
 
                     <div class="profile-reactions-container container-fluid">
                         <div class="row">
-                        <ul class="follower-count remove-liststyle">
+                        <ul class="follower-count remove-liststyle evenly-spaced-list">
                             <li  class="follower-icon"><i class="unclickable-icons fa fa-users" aria-hidden="true"></i><b><span> 123</span></b></li>
                             <li class="follower-text" >Glimmers</li>
                             <!-- <li>
