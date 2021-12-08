@@ -1,0 +1,89 @@
+.btn {
+	display: inline-block;
+	border-radius: $border-radius;
+	padding: 0.3rem 1.5rem;
+	background-color: var(--primary-color);
+	color: var(--white);
+	box-shadow: 1px 2px 6px color("tertiary");
+}
+
+@each $name,
+$color in $theme-colors {
+	.btn-#{$name} {
+		background-color: var(--#{$name}-color);
+		color: set-btn-text-color($color);
+
+		&:hover {
+			background-color: darken($color, 15%);
+		}
+	}
+
+	.btn-outline-#{$name} {
+		border: 1px solid $color;
+		background-color: initial;
+		color: $color;
+
+		&:hover {
+			background-color: darken($color, 15%);
+			color: set-btn-text-color($color);
+		}
+	}
+}
+
+// padding for buttons
+@each $name,
+$size in $btn-padding {
+	.btn-padding-#{$name} {
+		padding: calc(#{$size} / 4) $size;
+
+		// Fallback icon buttons
+		.icon-padding-right {
+			@if $size==initial {
+				padding-left: map-get($btn-padding, "small");
+			}
+
+			@else {
+				padding-left: $size;
+			}
+		}
+
+		.icon-padding-left {
+			@if $size==initial {
+				padding-right: map-get($btn-padding, "small");
+			}
+
+			@else {
+				padding-right: $size;
+			}
+		}
+	}
+}
+
+
+@each $name,
+$color in $theme-colors {
+	.icon-color-#{$name} {
+		color: var(--#{$name}-color);
+	}
+}
+
+.unclickable-icons {
+    color: color("tertiary");
+}
+
+.clickable-icons {
+    color: color("secondary");
+}
+
+.reaction-icons {
+    color: color("light");
+}
+
+.active-reaction-icon {
+    color: color("secondary");
+}
+
+.menu-icons {
+    color: color("menu");
+}
+

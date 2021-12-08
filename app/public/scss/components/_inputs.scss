@@ -1,0 +1,55 @@
+input[type=text],
+input[type=password] {
+    padding: 1rem;
+    width: 100%;
+    font-size: size("standard");
+    box-shadow: 1px 2px 7px color("tertiary");
+    border-radius: 10px;
+    border: 0;
+    background: rgba(color("white"), 0.8);
+}
+
+
+
+.sendMessageForm {
+    position: relative;
+    .sendMessageToolbar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        button,
+        input input[type="submit"],
+        input[type="reset"] {
+            background: none;
+            color: inherit;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+        }
+    }
+}
+
+.form-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .form-content {
+        width: 100%;
+        max-width: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding: inherit;
+        .form-group {
+            margin-bottom: 5rem;
+        }
+    }
+    
+}

@@ -8,12 +8,15 @@ class User extends BaseController {
     private $data;
     private $session;
     public function __construct() {
+        // Used to force the class to call validation when constructed
+        // parent::__construct()
         $this->userModel = model("UserModel", false);
         $this->data = array();
         $this->session = session();
     }
     public function index() {
         return view("login");
+        // return redirect()->to('/'); 
     }
     
     public function register() {
@@ -57,5 +60,11 @@ class User extends BaseController {
     public function fetchUserById($id) {
         $user = $this->userModel->getUserById($id);
         echo "<h3>Name: $user->name</h3>";
+    }
+
+    public function logout()
+    {
+        $this->session->destroy();
+        return redirect()->to('/'); 
     }
 }
