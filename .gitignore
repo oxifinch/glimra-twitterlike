@@ -31,6 +31,7 @@ phpunit
 #-------------------------
 vendor/
 composer.lock
+docker/mysql/*
 
 #-------------------------
 # IDE / Development Files
