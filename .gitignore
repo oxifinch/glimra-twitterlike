@@ -1,3 +1,4 @@
 docker/
+app/writable/*
 tags
 .env
