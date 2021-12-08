@@ -1,0 +1,10 @@
+:root {
+    // Custom variable values only support SassScript inside `#{}`.
+    @each $color, $value in $theme-colors {
+        --#{$color}-color: #{$value};
+    }
+
+    --font-sans-serif: #{$font-family-sans-serif};
+    --font-monospace: #{$font-family-monospace};
+
+}

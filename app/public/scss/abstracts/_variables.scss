@@ -1,0 +1,77 @@
+// -- COLORS --
+$theme-colors: (
+    "white": #FBFBFB,
+    "base": #090808,
+    "primary" : #CCD34C,
+    "secondary": #DC9013,
+    "tertiary": #99A03E ,
+    "quaternary": #EAB80A,
+    "menu": #E5EB7C,
+    "background": #EBF1A4,
+    "danger": #B43A1A,
+    "warning": #8D131D,
+    "info": #38A5F8,
+    "light": #C1BABA,
+    "dark": #5A5856,
+    "muted": #707070
+) !default;
+
+$btn-padding: (
+    "none": initial,
+    "extra-small": 0.5rem,
+    "small": 1rem,
+    "medium": 1.5rem,
+    "large": 3rem,
+) !default;
+
+$font-size: (
+    "small": 0.75rem,
+    "standard": 1rem,
+    "large":  1.25rem,
+    "extra-large": 1.5rem,
+) !default;
+
+$element-spacing: (
+    "small": 0.2rem,
+    "standard": 0.5rem,
+    "medium": 1rem,
+    "large": 1.25rem,
+    "extra-large": 1.6rem,
+) !default;
+// -- Container -- 
+$container-width: 1200 !default;
+
+// -- GRID --  
+$grid-cols: 12 !default;
+
+// BREAKPOINTS
+$grid-bp-small: 576 !default;
+$grid-bp-medium: 768 !default;
+$grid-bp-large: 992 !default;
+$grid-bp-xlarge: 1200 !default;
+
+// GRID MAP
+$map-grid-props: (
+    '': 0,
+    '-small': $grid-bp-small,
+    '-medium': $grid-bp-medium,
+    '-large': $grid-bp-large,
+    '-xlarge': $grid-bp-xlarge,
+)!default;
+
+
+// -- TYPOGRAPHY -- 
+
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+
+$font-family-base: var(--font-sans-serif) !default;
+$font-family-code: var(--font-monospace) !default;
+
+$font-size-root: null !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+
+
+// -- BORDER RADIUS -- 
+$border-radius: 4px !default;
+

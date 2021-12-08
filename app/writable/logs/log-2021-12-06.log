@@ -1,3 +1,131 @@
+CRITICAL - 2021-12-06 05:08:49 --> include(../partials/header.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/pages/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 18)
+#1 /app/app/Views/pages/index.php(18): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('pages/index')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:10:01 --> include(../partials/header.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/pages/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 18)
+#1 /app/app/Views/pages/index.php(18): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('pages/index')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:10:30 --> include(../partials/header.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/pages/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 18)
+#1 /app/app/Views/pages/index.php(18): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('pages/index')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:10:54 --> include(/partials/header.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/pages/index.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(/partia...', '/app/app/Views/...', 18)
+#1 /app/app/Views/pages/index.php(18): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('pages/index')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:11:34 --> Invalid file: index.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render('index', Array, true)
+#2 /app/app/Controllers/Home.php(9): view('index')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 05:15:38 --> include(../partials/profile.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/pages/index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 23)
+#1 /app/app/Views/pages/index.php(23): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('pages/index')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:18:06 --> Invalid file: ../partials/header.php
+#0 /app/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('../partials/hea...')
+#1 /app/system/View/View.php(432): CodeIgniter\View\View->render('../partials/hea...', NULL, true)
+#2 /app/app/Views/pages/index.php(18): CodeIgniter\View\View->include('../partials/hea...')
+#3 /app/system/View/View.php(214): include('/app/app/Views/...')
+#4 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 /app/system/Common.php(1097): CodeIgniter\View\View->render('pages/index', Array, true)
+#6 /app/app/Controllers/Home.php(9): view('pages/index')
+#7 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#8 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-06 05:24:15 --> include(../partials/loginPartial.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 11)
+#1 /app/app/Views/login.php(11): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#5 /app/app/Controllers/Home.php(9): view('login')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:56:51 --> include(../partials/loginPartial.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 11)
+#1 /app/app/Views/login.php(11): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('login', Array, true)
+#5 /app/app/Controllers/Home.php(13): view('login')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->login()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 05:56:58 --> include(../partials/registerPartial.php): Failed to open stream: No such file or directory
+#0 /app/app/Views/register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../part...', '/app/app/Views/...', 13)
+#1 /app/app/Views/register.php(13): include()
+#2 /app/system/View/View.php(214): include('/app/app/Views/...')
+#3 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 /app/system/Common.php(1097): CodeIgniter\View\View->render('register', Array, true)
+#5 /app/app/Controllers/Home.php(17): view('register')
+#6 /app/system/CodeIgniter.php(824): App\Controllers\Home->register()
+#7 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-12-06 11:00:39 --> syntax error, unexpected token ";"
+#0 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /app/system/Common.php(1097): CodeIgniter\View\View->render('index', Array, true)
+#2 /app/app/Controllers/Home.php(9): view('index')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+=======
 CRITICAL - 2021-12-06 04:34:25 --> Call to a member function addUser() on null
 #0 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
 #1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
@@ -216,3 +344,4 @@ CRITICAL - 2021-12-06 06:58:13 --> Undefined property: stdClass::$username
 #7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+
