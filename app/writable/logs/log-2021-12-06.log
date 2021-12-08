@@ -125,3 +125,223 @@ CRITICAL - 2021-12-06 11:00:39 --> syntax error, unexpected token ";"
 #5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+=======
+CRITICAL - 2021-12-06 04:34:25 --> Call to a member function addUser() on null
+#0 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#1 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-06 04:35:20 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-06 04:35:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Models/UserModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * from u...')
+#2 /app/app/Controllers/User.php(8): App\Models\UserModel->addUser('beans')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-06 04:37:28 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-12-06 04:37:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Models/UserModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * from u...')
+#2 /app/app/Controllers/User.php(8): App\Models\UserModel->addUser('beans')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-06 04:39:10 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-12-06 04:39:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Models/UserModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * from u...')
+#2 /app/app/Controllers/User.php(8): App\Models\UserModel->addUser('beans')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-06 04:39:13 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-12-06 04:39:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Models/UserModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * from u...')
+#2 /app/app/Controllers/User.php(8): App\Models\UserModel->addUser('beans')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-12-06 04:39:24 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-12-06 04:39:24 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /app/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /app/app/Models/UserModel.php(18): CodeIgniter\Database\BaseConnection->query('SELECT * from u...')
+#2 /app/app/Controllers/User.php(8): App\Models\UserModel->addUser('beans')
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:22:39 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:24:09 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:24:14 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:24:27 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:34:41 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:36:22 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(16): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->fetchAllUsers()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:38:42 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(16): CodeIgniter\Model->__call('fetchAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->fetchAllUsers()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:38:51 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(16): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->fetchAllUsers()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:39:22 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(16): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->fetchAllUsers()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:39:42 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:41:46 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getBeans', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:42:26 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getBeans', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:44:56 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:45:00 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:46:05 --> You must set the database table to be used with your query.
+#0 /app/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /app/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /app/app/Controllers/User.php(11): CodeIgniter\Model->__call('getAllUsers', Array)
+#3 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#4 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#5 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-06 06:48:25 --> Undefined variable $users
+#0 /app/app/Views/register.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/app/app/Views/...', 13)
+#1 /app/system/View/View.php(214): include('/app/app/Views/...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render('register', Array, true)
+#4 /app/app/Controllers/User.php(12): view('register', Array)
+#5 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-06 06:58:13 --> Undefined property: stdClass::$username
+#0 /app/app/Views/register.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/app/app/Views/...', 14)
+#1 /app/system/View/View.php(214): include('/app/app/Views/...')
+#2 /app/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /app/system/Common.php(1097): CodeIgniter\View\View->render('register', Array, true)
+#4 /app/app/Controllers/User.php(12): view('register', Array)
+#5 /app/system/CodeIgniter.php(824): App\Controllers\User->index()
+#6 /app/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 /app/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /app/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
