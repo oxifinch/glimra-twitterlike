@@ -9,6 +9,7 @@
 <?php
     echo "<h3>Username: $username</h3>";
     echo "<h3>Password: $password</h3>";
+    echo "<p>Session user id: $user_id</p>";
 ?>
 	</body>
 </html>

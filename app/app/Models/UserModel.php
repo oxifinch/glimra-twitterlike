@@ -5,8 +5,10 @@ use CodeIgniter\Model;
 
 class UserModel extends Model {
     protected $db;
+    private $session;
     public function __construct() {
         $this->db = db_connect();
+        $this->session = session();
     }
 
     // == GETTING USERS ==
@@ -22,23 +24,54 @@ class UserModel extends Model {
 
     public function getUserByUsername($username) {
         $query = $this->db->query("SELECT * FROM user WHERE user_name=$username");
+        if($query->getNumRows() == 0) {
+            return "[ERROR] Requested user could not be found!";
+        }
         return $query->getResult();
+    }
+
+    public function validateUserLogin($username, $password) {
+        $query = $this->db->query("
+            SELECT user_id 
+            FROM user  
+            WHERE user_name = '$username'
+            AND password = '$password'
+        ");
+        if($query->getNumRows() < 1) {
+            return "[ERROR] User could not be validated!";
+        }
+
+        $user = $query->getRow(0);
+        $session_data = [
+            "user_name" => $username,
+            "user_id"   => $user->user_id,
+        ];
+
+        $this->session->set($session_data);
+        return true;
     }
 
     // == CREATING USERS ==
     public function createUser($username, $password) {
-        // TODO: Proper error handling
+        $select_query = $this->db->query(
+            "SELECT user_id FROM user
+            WHERE user_name = '$username'"
+        );
+        if($select_query->getNumRows() != 0) {
+            return "[ERROR] Username is taken!";
+        }
+
         if(!$username || !$password) {
-            echo "[ERROR] Provide a username!";
+            return "[ERROR] Provide a username!";
         }
 
         $display_name = $username;
-        $query = $this->db->query(
+        $this->db->query(
             "INSERT INTO user 
             (user_name, display_name, password)
             VALUES ('$username', '$display_name', '$password')"
         );
-        return $query->getResult();
+        return true;
     }
 
     // == UPDATING USER INFO ==
