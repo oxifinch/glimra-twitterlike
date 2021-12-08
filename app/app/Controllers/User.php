@@ -23,8 +23,8 @@ class User extends BaseController {
     }
     
     public function register() {
-        $data["users"] = $this->userModel->getAllUsers();
-        return view("register", $data);
+        $this->data["users"] = $this->userModel->getAllUsers();
+        return view("register", $this->data);
     }
 
     public function registerSave() {

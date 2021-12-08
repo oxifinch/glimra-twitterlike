@@ -15,7 +15,6 @@
     <?=
    $this->include("/partials/loginPartial");
 ?>
-</body>
 
 </body>
 
