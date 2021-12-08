@@ -8,7 +8,7 @@
 	<body>
         <h1>Glimra</h1>
         <h2>Log In</h2>
-        <form action="loginSave" method="POST">
+        <form action="/user/loginSave" method="POST">
             <label for="input-user_name">Username</label><br>
             <input type="text" name="user_name" id="input-user_name"><br>
             <label for="input-password">Password</label><br>

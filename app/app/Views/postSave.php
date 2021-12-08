@@ -7,8 +7,9 @@
 	</head>
 	<body>
 <?php
-    echo "<h3>Username: $username</h3>";
-    echo "<p>Session user id: $user_id</p>";
+    echo "<h3>Saving post...</h3>";
+    #echo "<a href=\"/post\">Newsfeed</a>";
+    # TODO: This probably should not be hardcoded, find a better solution
     header("Location: http://localhost:8080/post");
 ?>
 	</body>
