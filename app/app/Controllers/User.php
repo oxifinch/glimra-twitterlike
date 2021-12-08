@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Controllers\BaseController;
+
 class User extends BaseController {
     protected $request;
     protected $userModel;
@@ -14,6 +16,7 @@ class User extends BaseController {
         $this->data = array();
         $this->session = session();
     }
+    
     public function index() {
         return view("login");
         // return redirect()->to('/'); 
