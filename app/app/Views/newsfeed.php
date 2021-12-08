@@ -22,7 +22,7 @@
                         <a href="#" class="image-container commenter-avatar"><img src="/assets/sadman.jpeg" alt=""
                                 width="100" height="100"></a>
                         <div class="list-container">
-                            <ul class="remove-liststyle">
+                            <ul class="remove-liststyle evenly-spaced-list">
                                 <li class="username"><?= $post->user_name ?></li>
                                 <li class="profile-name">
                                     <h4>@<?= $post->user_name ?></h4>
@@ -64,12 +64,54 @@
 ?>
     </div>
 
-    <form action="/post/postSave" method="POST">
-        <label for="input-text_content">Post</label><br>
-        <textarea name="text_content" id="input-text_content" cols="40" rows="10" maxlength="260"
-            placeholder="What's on your mind? (260 characters max)"></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="module-container-background">
+        <form action="/post/postSave" method="POST">
+            <div class="form-toolbar-wrapper">
+                <div class="textarea-container">
+                    <textarea name="text_content" id="textArea" rows="1" maxlength="260"
+                        placeholder="What's on your mind? (260 characters max)"></textarea>
+                </div>
+                <div class="form-toolbar">
+                    <!-- <input type="file" id="myFile" name="">
+        <input type="file" accept="image/*" capture=""> -->
+                    <!-- https://jakub-kozak.medium.com/how-to-open-the-native-camera-in-mobile-browsers-327820fa669a -->
+                    <!-- <button class="ActivateCameraIcon "><i class="fa fa-camera" aria-hidden="true" ></i></button>
+                    <button class="fileUploadIcon"><i class="fa fa-file" aria-hidden="true"></i></button> -->
+                    <button class=" clickable-icons submitUploadIcon" type="submit" class="typeSubmit"><i
+                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <small>Characters left: <span id="charactersRemaining">260</span></small>
+        </form>
+    </div>
+
+    <script>
+        const textArea = document.getElementById('textArea');
+        const tx = document.getElementsByTagName("textarea");
+    
+        for (let i = 0; i < tx.length; i++) {
+            const txHeight = 16;
+            if (tx[i].value == '') {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+            }
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput(e) {
+            this.style.height = "auto";
+            this.style.height = (this.scrollHeight) + "px";
+        }
+
+        function countCharacters(e) {
+            let textTyped = document.getElementById('textArea').value;
+            countRemaining = document.getElementById('charactersRemaining');
+            countRemaining.textContent = 260 - textTyped.length;
+        }
+
+        textArea.addEventListener('keydown', countCharacters, false);
+    </script>
 </body>
 
 </html>

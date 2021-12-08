@@ -5,7 +5,7 @@
                 <a href="#" class="image-container commenter-avatar"><img src="assets/sadman.jpeg" alt="" width="100"
                         height="100"></a>
                 <div class="list-container">
-                    <ul class="remove-liststyle">
+                    <ul class="remove-liststyle evenly-spaced-list">
                         <li class="username">Mr Someone</li>
                         <li class="profile-name">
                             <h4>@someone</h4>

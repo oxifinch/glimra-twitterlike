@@ -10,6 +10,6 @@ class Home extends BaseController
         return view('index');
 
         // TODO since website is small and only has posts by users, index will redirect to posts... REWORK THIS WHEN APP GROWS!
-        return redirect()->to('/post'); 
+        // return redirect()->to('/post'); 
     }
 }

@@ -14,30 +14,21 @@
 <body>
     <!-- <h2>Header:</h2> -->
 
-    <h2>Profile:</h2>
     <?=
     $this->include("/partials/profileBig");
 ?>
-
-<h2>Profile small!:</h2>
 
     <?=
     $this->include("/partials/profileSmall");
 ?>
 
-<h2>Posts:</h2>
-
-
     <?=
    $this->include("/partials/post");
 ?>
 
-<h2>search, alt typing..!</h2>
-
     <?=
    $this->include("/partials/postForm");
 ?>
-
 
 
     <div id="loginPartialContainer" class="hidden">
