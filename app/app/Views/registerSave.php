@@ -9,13 +9,8 @@
     <h1>Registering user...</h1>
     <hr>
 <?php
-echo "Hi there, $username. Trying to register you...<br>";
-echo "Your super secret password is: '$password'!";
-echo "<h2>Query result:</h2>";
-
-#echo "<pre>";
-#echo print_r($query);
-#echo "</pre>";
+    echo "Hi there, $username. Trying to register you now...<br>";
+    header("Location: http://localhost:8080/user");
 ?>
 	</body>
 </html>
