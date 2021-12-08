@@ -1,11 +1,20 @@
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Title</title>
-		<meta name="description" content="Create users"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Glimma</title>
+</head>
+
+<body>
+<?=
+   $this->include("/partials/registerPartial");
+?>
+</body>
+
+  <body>
     <h1>Register</h1>
     <hr>
 <?php
@@ -15,7 +24,7 @@
    }
    echo "<hr>";
 ?>
-    <form action="registerSave" method="POST">
+    <form action="user/registerSave" method="POST">
         <label for="input-user_name">Username</label> 
         <input type="text" name="user_name" id="input-user_name" maxlength="30"><br>
         <label for="password">Password</label>
@@ -23,4 +32,5 @@
         <button type="submit">Submit</button>
     </form>
 	</body>
+  
 </html>
