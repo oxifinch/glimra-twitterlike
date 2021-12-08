@@ -2,3 +2,4 @@ docker/
 app/writable/*
 tags
 .env
+docker/mysql/*
