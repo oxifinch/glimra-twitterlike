@@ -40,44 +40,6 @@
         </section>
     </div>
 
-    
-    <script>
-const postContent = document.getElementById("postContent");
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const hamburgerContainer = document.getElementById("hamburger-container")
-const closeHamburgerBtn = document.getElementById("closeHamburgerBtn")
-
-function hideElement(element) {
-    element.classList.toggle("hidden");
-}
-
-function extendText() {
-
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    postContent.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    postContent.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
-postContent.addEventListener("click", extendText);
-hamburgerBtn.addEventListener("click", () => {
-    hideElement(hamburgerContainer)
-})
-closeHamburgerBtn.addEventListener("click", () => {
-    hideElement(hamburgerContainer)
-})
-
-</script>
-
 </body>
 
 </html>
