@@ -11,8 +11,12 @@
 </head>
 
 <body>
+    
+    <?=
+    $this->include("/partials/header");
+?>
 
-    <div class="container-fluid">
+    <main>
         <?php
   foreach($posts as $post) { ?>
         <div class="module-container-background">
@@ -62,7 +66,6 @@
         <?php
 }
 ?>
-    </div>
 
     <div class="module-container-background">
         <form action="/post/postSave" method="POST">
@@ -85,6 +88,8 @@
         </form>
     </div>
     <script src="/javascript/clientfunctions.js"></script>
+    <script src="/javascript/header.js"></script>
+</main>
 </body>
 
 </html>

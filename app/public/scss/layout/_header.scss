@@ -6,7 +6,7 @@
     max-width: 100%;
     padding: 1rem 2rem;
     box-shadow: 1px 2px 7px color("tertiary");
-
+    z-index: 5;
     // clip-path: polygon(0 0, 100% 0, 100% 24%, 0 32%);
     #hamburgerBtn,
     #closeHamburgerBtn {
@@ -15,6 +15,7 @@
     }
 
     #hamburger-container {
+        z-index: 4;
         position: fixed;
         top: 0;
         left: 0;

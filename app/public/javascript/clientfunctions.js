@@ -1,27 +1,21 @@
-const postContent = document.getElementById("postContent");
-const hamburgerBtn = document.getElementById("hamburgerBtn");
-const hamburgerContainer = document.getElementById("hamburger-container")
-const closeHamburgerBtn = document.getElementById("closeHamburgerBtn")
+const postContent = document.querySelectorAll(".postContent");
 const textArea = document.getElementById('textArea');
 const tx = document.getElementsByTagName("textarea");
 
-function hideElement(element) {
-    element.classList.toggle("hidden");
-}
-
 function extendText() {
 
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
+    // TODO fix this...!
+    var dots = document.querySelectorAll(".dots");
+    var moreText = document.querySelectorAll(".more");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
+    if (dots[0].style.display === "none") {
+        dots[0].style.display = "inline";
         postContent.innerHTML = "Read more";
-        moreText.style.display = "none";
+        moreText[0].style.display = "none";
     } else {
-        dots.style.display = "none";
+        dots[0].style.display = "none";
         postContent.innerHTML = "Read less";
-        moreText.style.display = "inline";
+        moreText[0].style.display = "inline";
     }
 }
 
@@ -46,11 +40,8 @@ function countCharacters(e) {
     countRemaining.textContent = 260 - textTyped.length;
 }
 
-postContent.addEventListener("click", extendText);
-hamburgerBtn.addEventListener("click", () => {
-    hideElement(hamburgerContainer)
-})
-closeHamburgerBtn.addEventListener("click", () => {
-    hideElement(hamburgerContainer)
-})
+Array.from(postContent).forEach(e => {
+    e.addEventListener("click", extendText);
+});
+
 textArea.addEventListener('keydown', countCharacters, false);

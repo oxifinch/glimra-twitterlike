@@ -39,7 +39,8 @@
             <?= $this->include("/partials/loginPartial"); ?>
         </section>
     </div>
-
+    <script src="/javascript/clientfunctions.js"></script>
+    <script src="/javascript/header.js"></script>
 </body>
 
 </html>
