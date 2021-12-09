@@ -17,6 +17,9 @@
                       <a href="#"><i class="fa fa-user  menu-icon" aria-hidden="true"></i>User</a>
 
                       <a href="/user/logout"><i class="fa fa-sign-out  menu-icon" aria-hidden="true"></i>Logout</a>
+
+                      <!-- TODO remove this when user has logged in! And vice versa -->
+                      <a href="/user/"><i class="fa fa-sign-in  menu-icon" aria-hidden="true"></i>Login</a>
                   </div>
 
 

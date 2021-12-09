@@ -68,7 +68,14 @@ input[type=password],
         padding: inherit;
 
         .form-group {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
+        }
+        .form-group-submit {
+            margin-top: 6rem;
+            text-align: center;
+            .loginbtn {
+                margin-bottom: 1rem;
+            }
         }
     }
 
