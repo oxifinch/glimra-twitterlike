@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: space("standard");
 }
 b {
-    font-weight: 500;
+    font-weight: $font-weight-standard;
 }
 
 .more {
@@ -39,7 +39,7 @@ font-size: size("extra-large");
 }
 
 #hamburger-container {
-    font-weight: 500;
+    font-weight: $font-weight-standard;
     nav {
         font-size: size("standard");
         .nav-menu {
