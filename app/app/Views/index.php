@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <!-- <h2>Header:</h2> -->
+<?=
+    $this->include("/partials/header");
+?>
 
     <?=
     $this->include("/partials/profileBig");
@@ -40,25 +42,40 @@
 
     
     <script>
-const alterPostContent = document.getElementById("alterPostContent");
+const postContent = document.getElementById("postContent");
+const hamburgerBtn = document.getElementById("hamburgerBtn");
+const hamburgerContainer = document.getElementById("hamburger-container")
+const closeHamburgerBtn = document.getElementById("closeHamburgerBtn")
+
+function hideElement(element) {
+    element.classList.toggle("hidden");
+}
 
 function extendText() {
+
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    alterPostContent.innerHTML = "Read more"; 
+    postContent.innerHTML = "Read more"; 
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    alterPostContent.innerHTML = "Read less"; 
+    postContent.innerHTML = "Read less"; 
     moreText.style.display = "inline";
   }
 }
 
-alterPostContent.addEventListener("click", extendText)
+postContent.addEventListener("click", extendText);
+hamburgerBtn.addEventListener("click", () => {
+    hideElement(hamburgerContainer)
+})
+closeHamburgerBtn.addEventListener("click", () => {
+    hideElement(hamburgerContainer)
+})
+
 </script>
 
 </body>

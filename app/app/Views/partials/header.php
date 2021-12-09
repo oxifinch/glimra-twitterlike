@@ -1,41 +1,38 @@
-  
   <header id="mainHeader">
       <div class="row">
           <div id="hamburgerBtn">
-              <span>a</span>
-              <span>a</span>
-              <span>a</span>
+              <i class="fa fa-bars" aria-hidden="true"></i>
           </div>
 
-          <form>
-              <input type="text" placeholder="Search after user" name="search" id="navSearch">
-              <button type="submit">Mag</button>
-          </form>
-
-          <div id="hamburgerContainer">
+          <div id="hamburger-container" class="hidden">
               <nav>
-                  <div id="websiteNav" class="container-fluid">
-                        
-                          <a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Feed</a>
+                  <div class="nav-menu">
+                      <div id="closeHamburgerBtn" class="nav-close">
+                          <i class="fa fa-times" aria-hidden="true"></i>
+                      </div>
+                      <a href="/post"><i class="fa fa-newspaper-o menu-icon" aria-hidden="true"></i>Feed</a>
 
-                          <a href="#"><i class="fa fa-search" aria-hidden="true"></i>Search</a>
+                      <a href="#"><i class="fa fa-search  menu-icon" aria-hidden="true"></i>Search</a>
 
-                          <a href="#"><i class="fa fa-user" aria-hidden="true"></i>My profile</a>
+                      <a href="#"><i class="fa fa-user  menu-icon" aria-hidden="true"></i>User</a>
 
-                          <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
-
-                          <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
-
+                      <a href="/user/logout"><i class="fa fa-sign-out  menu-icon" aria-hidden="true"></i>Logout</a>
                   </div>
-                  <div id="profileSettings" class="hidden container-fluid">
+
+
+                  <div class="nav-settings">
+                      <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+                  </div>
+                  <!-- <div id="profileSettings" class="hidden container-fluid">
 
                       <a href="#"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit profile</a>
 
                       <a href="#"><i class="fa fa-address-card"></i> Change password</a>
 
                       <a href="#"><i class="fa fa-trash" aria-hidden="true"></i> Delete Account</a>
-                  </div>
+                 -->
               </nav>
+
           </div>
       </div>
 

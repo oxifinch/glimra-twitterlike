@@ -29,7 +29,7 @@
                         vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
                         at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
                         venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
-                        porta.</span> <b><span id="alterPostContent">Read more</span></b></p>
+                        porta.</span> <b><span id="postContent">Read more</span></b></p>
             </div>
 
         </div>
