@@ -25,11 +25,11 @@
             <div class="text-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
                     interdum, nisi lorem egestas vitae scelerisque enim ligula
-                        venenatis dolor. Maecenas nisl est, <span id="dots">...</span><span id="more">ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                        venenatis dolor. Maecenas nisl est, <span class="dots">...</span><span class="more">ultrices nec congue eget, auctor vitae massa. Fusce luctus
                         vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
                         at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
                         venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor
-                        porta.</span> <b><span id="alterPostContent">Read more</span></b></p>
+                        porta.</span> <b><span class="postContent">Read more</span></b></p>
             </div>
 
         </div>
@@ -48,3 +48,4 @@
         </div>
     </div>
 </section>
+

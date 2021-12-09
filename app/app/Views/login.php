@@ -12,10 +12,16 @@
 </head>
 
 <body>
+
+    <?=
+    $this->include("/partials/header");
+?>
+
     <?=
    $this->include("/partials/loginPartial");
 ?>
 
+    <script src="/javascript/header.js"></script>
 </body>
 
 </html>

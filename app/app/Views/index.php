@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <!-- <h2>Header:</h2> -->
+<?=
+    $this->include("/partials/header");
+?>
 
     <?=
     $this->include("/partials/profileBig");
@@ -37,30 +39,8 @@
             <?= $this->include("/partials/loginPartial"); ?>
         </section>
     </div>
-
-    
-    <script>
-const alterPostContent = document.getElementById("alterPostContent");
-
-function extendText() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    alterPostContent.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    alterPostContent.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
-alterPostContent.addEventListener("click", extendText)
-</script>
-
+    <script src="/javascript/clientfunctions.js"></script>
+    <script src="/javascript/header.js"></script>
 </body>
 
 </html>

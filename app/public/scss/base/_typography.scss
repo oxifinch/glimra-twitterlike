@@ -5,11 +5,11 @@ b {
     font-weight: 500;
 }
 
-#more {
+.more {
     display: none;
 }
 
-#alterPostContent {
+.postContent {
     color: color("secondary");
     white-space: nowrap;
 }
@@ -36,4 +36,20 @@ b {
 
 .submitUploadIcon {
 font-size: size("extra-large");
+}
+
+nav {
+    font-size: size("standard");
+    .nav-close {
+       
+    }
+    .nav-menu {
+        .menu-icon {
+            font-size: size("extra-large");
+        }
+    }
+
+    .nav-settings {
+        font-size: size("standard");
+    }
 }

@@ -11,8 +11,12 @@
 </head>
 
 <body>
+    
+    <?=
+    $this->include("/partials/header");
+?>
 
-    <div class="container-fluid">
+    <main>
         <?php
   foreach($posts as $post) { ?>
         <div class="module-container-background">
@@ -62,7 +66,6 @@
         <?php
 }
 ?>
-    </div>
 
     <div class="module-container-background">
         <form action="/post/postSave" method="POST">
@@ -84,34 +87,9 @@
             <small>Characters left: <span id="charactersRemaining">260</span></small>
         </form>
     </div>
-
-    <script>
-        const textArea = document.getElementById('textArea');
-        const tx = document.getElementsByTagName("textarea");
-    
-        for (let i = 0; i < tx.length; i++) {
-            const txHeight = 16;
-            if (tx[i].value == '') {
-                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
-            } else {
-                tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
-            }
-            tx[i].addEventListener("input", OnInput, false);
-        }
-
-        function OnInput(e) {
-            this.style.height = "auto";
-            this.style.height = (this.scrollHeight) + "px";
-        }
-
-        function countCharacters(e) {
-            let textTyped = document.getElementById('textArea').value;
-            countRemaining = document.getElementById('charactersRemaining');
-            countRemaining.textContent = 260 - textTyped.length;
-        }
-
-        textArea.addEventListener('keydown', countCharacters, false);
-    </script>
+    <script src="/javascript/clientfunctions.js"></script>
+    <script src="/javascript/header.js"></script>
+</main>
 </body>
 
 </html>
