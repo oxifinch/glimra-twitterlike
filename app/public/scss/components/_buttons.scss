@@ -5,6 +5,8 @@
 	background-color: var(--primary-color);
 	color: var(--white);
 	box-shadow: 1px 2px 6px color("tertiary");
+	border: none;
+	font-weight: $font-weight-standard;
 }
 
 @each $name,
@@ -65,6 +67,10 @@ $color in $theme-colors {
 	.icon-color-#{$name} {
 		color: var(--#{$name}-color);
 	}
+}
+
+a {
+	color: color("base")
 }
 
 .unclickable-icons {

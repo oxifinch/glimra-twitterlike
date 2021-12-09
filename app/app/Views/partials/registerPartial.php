@@ -2,6 +2,7 @@
         <form action="/user/registerSave" method="POST" class="form-content">
             <div class="form-group">
                 <h2>Register to Glimma</h2>
+                <p>Register and be beans!</p>
                 <p hidden>You have tried too many times to login, try again in a few minutes </p>
             </div>
             <div class="form-group">
@@ -17,9 +18,10 @@
                 </label>
                 <!-- <small>Password incorrect</small> -->
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-secondary btn-padding-large loginbtn" value="Register">
-                <a href="/user">Or Login</a>
+            <div class="form-group form-group-submit">
+                <ul class="remove-liststyle">
+                    <li><input type="submit" class="btn btn-secondary btn-padding-large loginbtn" value="Register"></li>
+                    <li><b><a href="/user">Or Login</a></b></li>
             </div>
         </form>
     </section>
