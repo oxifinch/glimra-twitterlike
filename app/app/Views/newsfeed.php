@@ -23,11 +23,21 @@
 }
 ?>
 
-        <?php 
+        <div id="postFormContainer" class="hidden">
+            <?php 
     echo view("/partials/postForm");
 ?>
+        </div>
 
-
+        <div id="togglePostFormBtn" class="btn btn-secondary btn-padding-small">
+            <ul class="follower-count remove-liststyle evenly-spaced-list">
+                <li id="post-icons">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                    <!-- <i class="fa fa-pencil" aria-hidden="true"></i> -->
+                </li>
+                <li id="postBtn-text">Post!</li>
+            </ul>
+        </div>
         <script src="/javascript/clientfunctions.js"></script>
         <script src="/javascript/header.js"></script>
     </main>

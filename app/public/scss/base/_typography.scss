@@ -25,6 +25,10 @@ b {
     font-size: size("standard");
 }
 
+#togglePostFormBtn {
+	font-size: size("extra-extra-large");
+}
+
 .fileUploadIcon {
 
 }
@@ -52,3 +56,15 @@ font-size: size("extra-large");
         }
     }  
 }
+
+#togglePostFormBtn {
+    font-weight: $font-weight-standard;
+    text-align: center;
+    #post-icon {
+        font-size: size("extra-large");
+    }
+	#postBtn-text {
+		font-size: size("small");
+	}
+}
+

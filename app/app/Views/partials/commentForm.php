@@ -1,25 +1,5 @@
-<!-- 
-    DO NOT USE!
-    
-    <div class="module-container-background">
-<form class="form-toolbar-wrapper">
-    <input type="text" class="" placeholder="Search after user" name="search" id="navSearch">
-    <div class="form-toolbar">
-        <input type="file" id="myFile" name="">
-        <input type="file" accept="image/*" capture="">
-        <button type="submit" class="typeSubmit"><i class="fa fa-paper-plane clickable-icons" aria-hidden="true"></i></button>
-    </div>
-    https://jakub-kozak.medium.com/how-to-open-the-native-camera-in-mobile-browsers-327820fa669a
-</form>
-</div>
-https://jsfiddle.net/coderatchet/p7zdrbvs/1/ 
--->
-
-<div id="post-form-container">
-    <div>
+<div class="post-form-container">
     <h3>What's on your mind? Share the glims!</h3>
-    <i id="closePostFormBtn" class="fa fa-times" aria-hidden="true"></i>
-</div>
             <form action="/post/postSave" method="POST">
                 <div class="form-toolbar-wrapper">
                     <div class="textarea-container">
@@ -34,3 +14,5 @@ https://jsfiddle.net/coderatchet/p7zdrbvs/1/
                 <small>Characters left: <span id="charactersRemaining">260</span></small>
             </form>
         </div>
+
+        <!-- TODO use this for comments! -->

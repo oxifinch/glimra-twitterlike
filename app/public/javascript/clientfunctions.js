@@ -1,6 +1,9 @@
 const postContent = document.querySelectorAll(".postContent");
 const textArea = document.getElementById('textArea');
 const tx = document.getElementsByTagName("textarea");
+const postFormContainer = document.getElementById('postFormContainer');
+const togglePostFormBtn = document.getElementById("togglePostFormBtn");
+const closePostFormBtn = document.getElementById("closePostFormBtn");
 
 function extendText() {
 
@@ -45,3 +48,11 @@ Array.from(postContent).forEach(e => {
 });
 
 textArea.addEventListener('keydown', countCharacters, false);
+
+togglePostFormBtn.addEventListener("click", () => {
+    hideElement(postFormContainer)
+}, false);
+
+closePostFormBtn.addEventListener("click", () => {
+    hideElement(postFormContainer)
+}, false);
