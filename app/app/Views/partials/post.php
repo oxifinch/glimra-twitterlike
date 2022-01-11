@@ -2,7 +2,7 @@
             <section class="module-container">
                 <header class="profile-header">
                     <div class="profile-info">
-                        <a href="#" class="image-container commenter-avatar"><img src="/assets/sadman.jpeg" alt=""
+                        <a href="#" class="image-container commenter-avatar"><img src="/assets/profileimgs/<?= $post->user_name[0] ?>.jpeg" alt="profile image for <?= $post->user_name?>"
                                 width="100" height="100"></a>
                         <div class="list-container">
                             <ul class="remove-liststyle evenly-spaced-list">

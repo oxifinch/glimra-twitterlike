@@ -4,6 +4,7 @@
               <i class="fa fa-bars" aria-hidden="true"></i>
               <i class="fa fa-times" aria-hidden="true"></i>
           </div>
+          
           <div id="hamburger-container" class="hidden">
               <nav>
                   <div class="nav-menu">
