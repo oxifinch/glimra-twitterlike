@@ -9,9 +9,8 @@ b {
     display: none;
 }
 
-.postContent {
-    color: color("secondary");
-    white-space: nowrap;
+.post-content {
+    overflow-wrap: break-word;
 }
 
 .post-date {
