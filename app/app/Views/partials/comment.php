@@ -1,5 +1,4 @@
-<div class="module-container-background">
-    <section class="module-container">
+<section class="comment-module-container">
         <header class="profile-header">
             <div class="profile-info">
                 <a href="#" class="image-container commenter-avatar"><img
@@ -38,33 +37,4 @@
                 </div>
             </div>
         </div>
-
-        <hr>
-
-        <section class="comment-felid">
-
-            <div class="comment-heading">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-                <h3>Comments</h3>
-            </div>
-
-            <!-- TODO fix this -->
-            <?php 
-    echo view("/partials/comment");
-?>
-
-            <?php 
-    echo view("/partials/comment");
-?>
-
-            <?php 
-    echo view("/partials/comment");
-?>
-
-<?php 
-    echo view("/partials/commentForm");
-?>
-
-        </section>
     </section>
-</div>
