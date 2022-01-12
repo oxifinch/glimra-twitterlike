@@ -20,7 +20,7 @@ https://jsfiddle.net/coderatchet/p7zdrbvs/1/
     <h3>What's on your mind? Share the glims!</h3>
     <i id="closePostFormBtn" class="fa fa-times" aria-hidden="true"></i>
 </div>
-            <form action="/post/postSave" method="POST">
+            <form action="/post/postSave" method="POST" class="content-form-container">
                 <div class="form-toolbar-wrapper">
                     <div class="textarea-container">
                         <textarea name="text_content" id="textArea" rows="1" maxlength="260"

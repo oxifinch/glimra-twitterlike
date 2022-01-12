@@ -1,6 +1,6 @@
 const postContent = document.querySelectorAll(".postContent");
-const textArea = document.getElementById('textArea');
-const tx = document.getElementsByTagName("textarea");
+const contentFormContainer = document.querySelectorAll('.content-form-container');
+const tx = document.querySelectorAll("textarea");
 const postFormContainer = document.getElementById('postFormContainer');
 const togglePostFormBtn = document.getElementById("togglePostFormBtn");
 const closePostFormBtn = document.getElementById("closePostFormBtn");
@@ -38,16 +38,25 @@ function OnInput(e) {
 }
 
 function countCharacters(e) {
-    let textTyped = document.getElementById('textArea').value;
-    countRemaining = document.getElementById('charactersRemaining');
-    countRemaining.textContent = 260 - textTyped.length;
+    const target = e.target;
+    const targetValue = target.value.length;
+    const getRelatedDomCounter = target.closest(".content-form-container").children[1].children[0];
+    getRelatedDomCounter.textContent = 260 - targetValue;
 }
 
 Array.from(postContent).forEach(e => {
     e.addEventListener("click", extendText);
 });
 
-textArea.addEventListener('keydown', countCharacters, false);
+for (let i = 0; i < tx.length; i++) {
+ 
+}
+
+tx.forEach(tx => {
+    tx.addEventListener('keyup', (e) => {
+        countCharacters(e)
+    }, false);
+});
 
 togglePostFormBtn.addEventListener("click", () => {
     hideElement(postFormContainer)

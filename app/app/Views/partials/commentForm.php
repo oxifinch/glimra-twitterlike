@@ -1,6 +1,6 @@
    <!-- TODO make fix comment form -->
    <div>
-       <form action="Lol!AddIdToPostURL" method="POST">
+       <form action="Lol!AddIdToPostURL" method="POST" class="content-form-container">
            <div class="form-toolbar-wrapper">
                <div class="textarea-container">
                    <textarea name="text_content" id="textArea" rows="1" maxlength="260"
@@ -11,6 +11,6 @@
                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
                </div>
            </div>
-           <small>Characters left: <span id="charactersRemaining">260</span></small>
+           <small>Characters left: <span class="charactersRemaining">260</span></small>
        </form>
    </div>
