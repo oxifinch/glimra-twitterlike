@@ -1,3 +1,8 @@
+.input-feedback-info {
+    margin-top: space("small");  
+    font-size: 80%
+}
+
 input[type=text],
 input[type=password],
 .textarea-container {
@@ -30,12 +35,14 @@ input[type=password],
 
 .form-toolbar-wrapper {
     position: relative;
+
     .form-toolbar {
         margin: 0;
         position: absolute;
         top: 50%;
         right: size("standard");
         transform: translate(0, -50%);
+
         button,
         input input[type="submit"],
         input[type="reset"] {
@@ -48,7 +55,6 @@ input[type=password],
         }
     }
 }
-
 
 .form-container {
     position: absolute;
@@ -70,13 +76,30 @@ input[type=password],
         .form-group {
             margin-bottom: 3rem;
         }
+
         .form-group-submit {
             margin-top: 6rem;
             text-align: center;
+
             .loginbtn {
                 margin-bottom: 1rem;
             }
         }
     }
 
+}
+
+.comment-form-container {
+    input[type=text],
+    input[type=password],
+    .textarea-container {
+        padding: size("small");
+    }
+    i {
+        font-size: size("large");    
+    }
+    .input-feedback-info {
+        margin-top: space("extra-small");  
+        font-size: 80%
+    }
 }

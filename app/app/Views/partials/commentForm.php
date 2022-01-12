@@ -1,5 +1,5 @@
    <!-- TODO make fix comment form -->
-   <div>
+   <div class="comment-form-container">
        <form action="Lol!AddIdToPostURL" method="POST" class="content-form-container">
            <div class="form-toolbar-wrapper">
                <div class="textarea-container">
@@ -11,6 +11,6 @@
                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
                </div>
            </div>
-           <small>Characters left: <span class="charactersRemaining">260</span></small>
+           <p class="characters-left input-feedback-info">Characters left: <span class="charactersRemaining">260</span></p>
        </form>
    </div>
