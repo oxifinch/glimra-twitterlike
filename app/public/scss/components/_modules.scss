@@ -120,25 +120,28 @@
         margin-bottom: space("medium");
     }
 
+    .comment-heading {
+        margin-bottom: space("medium");
+    }
+
 }
 
 .comment-module-container {
-
+    margin-bottom: space("extra-large");
     .profile-header {
-        margin-bottom: space("medium");
+        margin-bottom: space("small");
 
         .profile-info {
             display: flex;
             flex-wrap: wrap;
-
             .commenter-avatar {
-                width: 60px;
-                height: 60px;
+                width: 40px;
+                height: 40px;
             }
 
             .user-avatar {
-                width: 80px;
-                height: 80px;
+                width: 60px;
+                height: 60px;
             }
 
             .image-container {
@@ -161,27 +164,11 @@
                         h4 {
                             margin-bottom: 0;  
                         }
-                        font-size: size("large");
-                    }
-
-                    .username {
-                        font-size: size("standard");
-                    }
-
-                    .join-date {
-                        margin-top: space("small");
                         font-size: size("small");
                     }
 
-                    .commenter-profile-name {
-                        h4 {
-                            margin-bottom: 0;  
-                        }
-                        font-size: size("large");
-                    }
-    
-                    .commenter-username {
-                        font-size: size("large");
+                    .username {
+                        font-size: size("small");
                     }
                 }
                 
@@ -189,58 +176,25 @@
 
             .header-aside {
                 margin-left: auto;
-            }
-        }
-    }
-
-    .profile-bio {
-        margin-bottom: space("medium");
-        .bio-heading {
-            font-size: size("extra-large");
-        }
-        .bio-text {
-            font-size: size("standard");
-        }
-    }
-
-    .profile-reactions-container {    
-        .follower-count, .react-count {
-            .follower-icon {
-                font-size: size("extra-large");
-            }
-            .follower-text {
                 font-size: size("small");
             }
-        }
-        .react-count {
-            margin-left: 20%;
         }
     }
 
     .post-content {
-        margin-bottom: space("medium");
-        .img-content {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            margin-bottom: space("small");
-        }
-        .text-content {
-
-        }
+        margin-bottom: space("small");
     }
 
     .reaction-container {
-        margin-bottom: space("medium");
+        i {
+            font-size: size("small");  
+        }
+        font-size: size("small");
+        margin-bottom: space("small");
         .post-option {
             margin-left: auto;
         }
     }
-
-    hr {
-        margin-bottom: space("medium");
-    }
-
 }
 
 @media screen and (min-width: 700px) {

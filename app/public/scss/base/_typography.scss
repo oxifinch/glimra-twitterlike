@@ -1,6 +1,16 @@
-h1, h2, h3, h4, h5, h6, p {
+// * {
+//     font-weight: $font-weight-standard;
+// }
+
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: space("standard");
+    font-weight: $font-weight-bold;
 }
+
+p {
+    font-weight: $font-weight-standard;
+}
+
 b {
     font-weight: $font-weight-standard;
 }

@@ -44,8 +44,7 @@
         <section class="comment-felid">
 
             <div class="comment-heading">
-                <i class="fa fa-comments" aria-hidden="true"></i>
-                <h3>Comments</h3>
+                <h3><i class="fa fa-comments unclickable-icons" aria-hidden="true"></i> Comments</h3>
             </div>
 
             <!-- TODO fix this -->
