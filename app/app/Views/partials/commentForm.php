@@ -3,7 +3,7 @@
        <form action="Lol!AddIdToPostURL" method="POST" class="content-form-container">
            <div class="form-toolbar-wrapper">
                <div class="textarea-container">
-                   <textarea name="text_content" id="textArea" rows="1" maxlength="260"
+                   <textarea class="expand-textarea" name="text_content" id="textArea" rows="1" maxlength="260"
                        placeholder="Write a comment! (260 characters max)"></textarea>
                </div>
                <div class="form-toolbar">

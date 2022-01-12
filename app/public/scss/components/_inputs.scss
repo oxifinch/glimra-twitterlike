@@ -39,14 +39,14 @@ input[type=password],
     .form-toolbar {
         margin: 0;
         position: absolute;
-        top: 50%;
+        bottom: 0;
         right: size("standard");
         transform: translate(0, -50%);
 
         button,
         input input[type="submit"],
         input[type="reset"] {
-            margin-right: 0.5rem;
+            margin-right: 0;
             background: none;
             border: none;
             padding: 0;

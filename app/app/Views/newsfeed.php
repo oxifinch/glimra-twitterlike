@@ -22,11 +22,12 @@
 }
 ?>
 
-        <div id="postFormContainer" class="hidden">
-            <?php 
+<div id="post-form-container" class="hidden">
+            <?php  
     echo view("/partials/postForm");
 ?>
-        </div>
+</div>
+       
 
         <div id="togglePostFormBtn" class="btn btn-secondary btn-padding-small">
             <ul class="follower-count remove-liststyle evenly-spaced-list">

@@ -1,9 +1,11 @@
 const postContent = document.querySelectorAll(".postContent");
 const contentFormContainer = document.querySelectorAll('.content-form-container');
-const tx = document.querySelectorAll("textarea");
-const postFormContainer = document.getElementById('postFormContainer');
+const allTx = document.querySelectorAll("textarea");
+const tx = document.querySelectorAll(".expand-textarea");
+// const postFormContainer = document.getElementById('postFormContainer');
 const togglePostFormBtn = document.getElementById("togglePostFormBtn");
 const closePostFormBtn = document.getElementById("closePostFormBtn");
+const postFormContainer = document.getElementById("post-form-container");
 
 function extendText() {
 
@@ -52,7 +54,7 @@ for (let i = 0; i < tx.length; i++) {
  
 }
 
-tx.forEach(tx => {
+allTx.forEach(tx => {
     tx.addEventListener('keyup', (e) => {
         countCharacters(e)
     }, false);
@@ -64,4 +66,11 @@ togglePostFormBtn.addEventListener("click", () => {
 
 closePostFormBtn.addEventListener("click", () => {
     hideElement(postFormContainer)
+}, false);
+
+postFormContainer.addEventListener("click", (e) => {
+    if (e.target.id === "post-form-container") {
+        hideElement(postFormContainer) 
+    }
+    return;
 }, false);
