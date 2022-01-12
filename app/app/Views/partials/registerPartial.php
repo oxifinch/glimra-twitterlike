@@ -14,7 +14,7 @@
             </div>
             <div class="form-group">
                 <label for="register">
-                    <input type="text" name="password" id="input-password" maxlength="45" placeholder="Password..">
+                    <input type="password" name="password" id="input-password" maxlength="45" placeholder="Password..">
                 </label>
                 <!-- <small>Password incorrect</small> -->
             </div>

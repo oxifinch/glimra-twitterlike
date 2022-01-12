@@ -10,13 +10,13 @@
             <label for="login">
                 <input type="text" name="user_name" id="input-user_name" placeholder="Email or username">
             </label>
-            <!-- <small>Username incorrect</small> -->
+            <!--    <p class="input-feedback-info">Something incorrect</p> -->
         </div>
         <div class="form-group">
             <label for="register">
-                <input type="text" name="password" id="input-password" placeholder="Password..">
+                <input type="password" name="password" id="input-password" placeholder="Password..">
             </label>
-            <!-- <small>Password incorrect</small> -->
+            <!-- <p class="input-feedback-info">Something incorrect</p> -->
         </div>
         <div class="form-group form-group-submit">
         <ul class="remove-liststyle">

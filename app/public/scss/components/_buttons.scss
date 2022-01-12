@@ -69,10 +69,6 @@ $color in $theme-colors {
 	}
 }
 
-a {
-	color: color("base")
-}
-
 .unclickable-icons {
     color: color("tertiary");
 }
@@ -91,5 +87,15 @@ a {
 
 .menu-icon {
     color: color("menu");
+}
+
+#togglePostFormBtn {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	margin: 1rem;
+	* {
+		color: color("white") !important;
+	}
 }
 

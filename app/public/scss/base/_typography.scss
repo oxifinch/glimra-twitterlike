@@ -1,6 +1,12 @@
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: space("standard");
+    font-weight: $font-weight-bold;
 }
+
+p {
+    font-weight: $font-weight-standard;
+}
+
 b {
     font-weight: $font-weight-standard;
 }
@@ -9,9 +15,8 @@ b {
     display: none;
 }
 
-.postContent {
-    color: color("secondary");
-    white-space: nowrap;
+.post-content {
+    overflow-wrap: break-word;
 }
 
 .post-date {
@@ -26,12 +31,20 @@ b {
     font-size: size("standard");
 }
 
-.fileUploadIcon {
-
+#togglePostFormBtn {
+	font-size: size("extra-extra-large");
 }
 
-.ActivateCameraIcon {
+// .fileUploadIcon {
 
+// }
+
+// .ActivateCameraIcon {
+
+// }
+
+.reaction-icons {
+    font-size: size("extra-large");
 }
 
 .submitUploadIcon {
@@ -53,3 +66,15 @@ font-size: size("extra-large");
         }
     }  
 }
+
+#togglePostFormBtn {
+    font-weight: $font-weight-standard;
+    text-align: center;
+    #post-icon {
+        font-size: size("extra-large");
+    }
+	#postBtn-text {
+		font-size: size("small");
+	}
+}
+

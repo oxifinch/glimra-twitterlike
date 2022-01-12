@@ -25,21 +25,24 @@ $btn-padding: (
 ) !default;
 
 $font-size: (
-    "small": 0.75rem,
+    "extra-small": 0.6rem,
+    "small": 0.9rem,
     "standard": 1rem,
     "large":  1.25rem,
     "extra-large": 1.5rem,
     "extra-extra-large": 2rem,
 ) !default;
 
-$font-weight-standard: 500;
+$font-weight-standard: 400;
+$font-weight-bold: 600;
 
 $element-spacing: (
-    "small": 0.2rem,
-    "standard": 0.5rem,
+    "extra-small": 0.3rem,
+    "small": 0.6rem,
+    "standard": 0.8rem,
     "medium": 1rem,
     "large": 1.25rem,
-    "extra-large": 1.6rem,
+    "extra-large": 2rem,
 ) !default;
 // -- Container -- 
 $container-width: 1200 !default;
