@@ -27,8 +27,8 @@ https://jsfiddle.net/coderatchet/p7zdrbvs/1/
                     placeholder="What's on your mind? (260 characters max)"></textarea>
             </div>
             <div class="form-toolbar">
-                <button class=" clickable-icons submitUploadIcon" type="submit" class="typeSubmit"><i
-                        class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                <button class=" submitUploadIcon" type="submit" class="typeSubmit"><i
+                        class="fa fa-paper-plane clickable-icons" aria-hidden="true"></i></button>
             </div>
         </div>
         <p class="characters-left input-feedback-info">Characters left: <span id="charactersRemaining">260</span></p>

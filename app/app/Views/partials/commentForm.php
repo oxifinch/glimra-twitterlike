@@ -7,8 +7,8 @@
                        placeholder="Write a comment! (260 characters max)"></textarea>
                </div>
                <div class="form-toolbar">
-                   <button class=" clickable-icons submitUploadIcon typeSubmit" type="submit"><i
-                           class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                   <button class="submitUploadIcon typeSubmit" type="submit"><i
+                           class="fa fa-paper-plane clickable-icons" aria-hidden="true"></i></button>
                </div>
            </div>
            <p class="characters-left input-feedback-info">Characters left: <span class="charactersRemaining">260</span></p>
