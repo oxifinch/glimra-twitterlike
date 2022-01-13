@@ -3,6 +3,7 @@ main {
 }
 
 .module-container-background {
+    position: relative;
     background: rgba(color("white"), 0.9) 0% 0% no-repeat padding-box;
     border-radius: 13px;
     box-shadow: 0px 3px 6px color("tertiary");
@@ -21,21 +22,22 @@ main {
     background: rgba(color("base"), 0.4) 0% 0% no-repeat padding-box;
     padding: space("large");
     #post-form {
-        margin-top: 4rem;
+        border-radius: 9px;
+        // margin-bottom: 4rem;
         // padding: 2rem 1rem 4rem 1rem;
-        // position: fixed;
-        // top: 50%;  
-        // left: 50%; 
-        // transform: translate(-50%, -50%); 
+        position: absolute;
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%); 
         background: rgba(color("white"), 0.9) 0% 0% no-repeat padding-box;
-        width: 100%;
-        min-height: 90%;
+        width: calc(100% - 2rem);
+        // min-height: 90%;
         max-width: 725px;
     }
 }
 
 .content-form-container {
-    margin-top: space("extra-large");
+    margin-top: space("large");
 }
 
 .module-container-invisible {

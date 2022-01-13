@@ -16,10 +16,11 @@ https://jsfiddle.net/coderatchet/p7zdrbvs/1/
 -->
 
     <div id="post-form" class="module-container-background">
-        <div>
-            <h3>What's on your mind? Share the glims!</h3>
-            <i id="closePostFormBtn" class="fa fa-times" aria-hidden="true"></i>
-        </div>
+   
+    <i id="closePostFormBtn" class="fa fa-times" aria-hidden="true"></i>
+
+    <h3>What's on your mind? Share the glims!</h3>
+      
         <form action="/post/postSave" method="POST" class="content-form-container">
             <div class="form-toolbar-wrapper">
                 <div class="textarea-container">

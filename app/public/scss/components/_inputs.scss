@@ -1,4 +1,5 @@
 .input-feedback-info {
+    color: color("muted");
     margin-top: space("small");  
     font-size: 80%
 }
@@ -9,7 +10,7 @@ input[type=password],
     padding: size("standard");
     width: 100%;
     font-size: size("standard");
-    box-shadow: 1px 2px 7px color("tertiary");
+    box-shadow: 1px 1px 2px color("tertiary");
     border-radius: 10px;
     border: 0;
     background: rgba(color("white"), 0.8);

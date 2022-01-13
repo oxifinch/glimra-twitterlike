@@ -1,4 +1,4 @@
-  <header id="mainHeader">
+<header id="mainHeader">
       <div class="row">
           <div id="hamburgerBtn">
               <i class="fa fa-bars" aria-hidden="true"></i>
@@ -36,5 +36,5 @@
 
           </div>
       </div>
-
   </header>
+  <div id="blocker-background" class="hidden"></div>
