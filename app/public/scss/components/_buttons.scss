@@ -90,6 +90,7 @@ $color in $theme-colors {
 }
 
 #togglePostFormBtn {
+	cursor: pointer;
 	position: fixed;
 	right: 0;
 	bottom: 0;
@@ -99,3 +100,11 @@ $color in $theme-colors {
 	}
 }
 
+#closePostFormBtn {
+	cursor: pointer;
+	position: absolute;
+	color: color("warning");
+	font-size: size("extra-extra-large");
+	top: -0.8rem;
+	right: -0.6rem;
+}

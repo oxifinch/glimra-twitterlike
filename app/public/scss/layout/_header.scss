@@ -1,4 +1,5 @@
-#mainHeader {
+  #mainHeader {
+    z-index: 999999999;
     a {
         font-weight: $font-weight-bold;
     }
@@ -7,16 +8,15 @@
     top: 0;
     left: 0;
     max-width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     box-shadow: 1px 2px 7px color("tertiary");
-    z-index: 99999999;
     // clip-path: polygon(0 0, 100% 0, 100% 24%, 0 32%);
     #hamburgerBtn,
     #closeHamburgerBtn {
         * {
             color: color("dark");
         }
-        font-size: size("large");
+        font-size: size("extra-large");
         cursor: pointer;
     }
 
@@ -58,6 +58,16 @@
             }
         }
     }
+}
+
+#blocker-background {
+    z-index: 999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(color("base"), 0.4) 0% 0% no-repeat padding-box;
 }
 
 .hide-hamburger {
