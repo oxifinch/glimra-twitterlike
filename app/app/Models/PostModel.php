@@ -16,6 +16,7 @@ class PostModel extends Model {
         $query = $this->db->query("
             SELECT * 
             FROM post
+            ORDER BY post_id ASC
             INNER JOIN user
             ON post.user_id = user.user_id
         ");
@@ -66,5 +67,16 @@ class PostModel extends Model {
         ");
 
         return true;
+    }
+
+    public function deletePost($postId) {
+        if(!$postId) {
+            return false;
+        }
+        
+        $query = $this->db->query("
+            DELETE FROM post
+            WHERE post_id = '$postId'
+        ");
     }
 }

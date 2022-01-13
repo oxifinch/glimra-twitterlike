@@ -9,6 +9,9 @@ class UserModel extends Model {
     public function __construct() {
         $this->db = db_connect();
         $this->session = session();
+        if($this->db == NULL) {
+            echo "AAAAAAAAAAAAAAAAAAH";
+        }
     }
 
     // == GETTING USERS ==
@@ -31,6 +34,9 @@ class UserModel extends Model {
     }
 
     public function validateUserLogin($username, $password) {
+        if(!$username || $username == "" || !$password || $password == "") {
+            return false;
+        }
         $query = $this->db->query("
             SELECT user_id 
             FROM user  
@@ -38,7 +44,7 @@ class UserModel extends Model {
             AND password = '$password'
         ");
         if($query->getNumRows() < 1) {
-            return "[ERROR] User could not be validated!";
+            return false;
         }
 
         $user = $query->getRow(0);
@@ -53,10 +59,10 @@ class UserModel extends Model {
 
     // == CREATING USERS ==
     public function createUser($username, $password) {
-        $select_query = $this->db->query(
-            "SELECT user_id FROM user
-            WHERE user_name = '$username'"
-        );
+        $select_query = $this->db->query("
+            SELECT user_id FROM user
+            WHERE user_name = '$username'
+        ");
         if($select_query->getNumRows() != 0) {
             return "[ERROR] Username is taken!";
         }
@@ -66,11 +72,11 @@ class UserModel extends Model {
         }
 
         $display_name = $username;
-        $this->db->query(
-            "INSERT INTO user 
+        $this->db->query("
+            INSERT INTO user 
             (user_name, display_name, password)
-            VALUES ('$username', '$display_name', '$password')"
-        );
+            VALUES ('$username', '$display_name', '$password')
+        ");
         return true;
     }
 
@@ -104,11 +110,11 @@ class UserModel extends Model {
             echo "[ERROR] You did not provide a new password!";
         }
 
-        $query = $this->db->query(
-            "UPDATE user 
+        $query = $this->db->query("
+            UPDATE user 
             SET password = '$data->new_password'
-            WHERE id = $data->id;"
-        );
+            WHERE id = $data->id;
+        ");
         // TODO: Encrypt password maybe?
         // TODO: Create password_change 
         return $query->getResult();
