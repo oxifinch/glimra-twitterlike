@@ -1,8 +1,8 @@
 <header id="mainHeader">
       <div class="row">
           <div id="hamburgerBtn">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-              <i class="fa fa-times" aria-hidden="true"></i>
+              <i class="fa fa-bars" id="open-hamburger-btn" aria-hidden="true"></i>
+              <i class="fa fa-times hidden" id="close-hamburger-btn" aria-hidden="true"></i>
           </div>
           
           <div id="hamburger-container" class="hidden">

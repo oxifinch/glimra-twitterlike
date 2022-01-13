@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     max-width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     box-shadow: 1px 2px 7px color("tertiary");
     // clip-path: polygon(0 0, 100% 0, 100% 24%, 0 32%);
     #hamburgerBtn,
@@ -16,7 +16,7 @@
         * {
             color: color("dark");
         }
-        font-size: size("large");
+        font-size: size("extra-large");
         cursor: pointer;
     }
 
