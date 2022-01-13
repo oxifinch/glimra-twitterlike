@@ -22,8 +22,9 @@ class User extends BaseController {
     }
     
     public function register() {
-        $this->data["users"] = $this->userModel->getAllUsers();
-        return view("register", $this->data);
+        //$this->data["users"] = $this->userModel->getAllUsers();
+        //return view("register", $this->data);
+        return view("register");
     }
 
     public function registerSave() {
@@ -37,7 +38,8 @@ class User extends BaseController {
                 'username' => $username,
                 'password' => $password,
             ];
-            return view("registerSave", $this->data);
+            header("Location: http://localhost:8080");
+            //return view("registerSave", $this->data);
         }
     }
 
@@ -64,8 +66,7 @@ class User extends BaseController {
         echo "<h3>Name: $user->name</h3>";
     }
 
-    public function logout()
-    {
+    public function logout() {
         $this->session->destroy();
         return redirect()->to('/'); 
     }
