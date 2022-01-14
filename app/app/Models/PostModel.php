@@ -16,9 +16,9 @@ class PostModel extends Model {
         $query = $this->db->query("
             SELECT * 
             FROM post
-            ORDER BY post_id ASC
             INNER JOIN user
             ON post.user_id = user.user_id
+            ORDER BY post_id DESC
         ");
         return $query->getResult();
     }

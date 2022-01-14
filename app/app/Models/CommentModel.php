@@ -15,8 +15,8 @@ class CommentModel extends Model {
         $query = $this->db->query("
             SELECT *
             FROM comment
-            ORDER BY comment_id ASC
             WHERE comment_id = '$postId'
+            ORDER BY comment_id ASC
         ");
 
         if($query->getNumRows() == 0) {
