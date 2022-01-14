@@ -32,7 +32,7 @@
         <div class="reaction-container container-fluid">
             <div class="row">
                 <div class="reaction-list">
-                    <a href="#"><i class="reaction-icons fa fa-thumbs-up" aria-hidden="true"></i> 356</a>
+                <a href=<?php echo "/like/likeSave?post_id=$post->post_id" ?> ><i class="reaction-icons fa fa-thumbs-up" aria-hidden="true"></i> <?php echo $post->likes ?></a>
                 </div>
                 <div class="post-option">
                     <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
