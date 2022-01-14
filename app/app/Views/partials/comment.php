@@ -23,14 +23,14 @@
             <!-- <img class="img-content" src="assets/sadman.jpeg" alt="" width="300" height="300"> -->
             <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img -->
             <div class="text-content">
-                <p><?= $post->text_content ?></p>
+                <p><?= $comment->text_content ?></p>
             </div>
 
         </div>
         <div class="reaction-container container-fluid">
             <div class="row">
                 <div class="reaction-list">
-                    <a href="#"><i class="reaction-icons fa fa-thumbs-up" aria-hidden="true"></i> 356</a>
+                <a href="#"><i class="reaction-icons fa fa-thumbs-up" aria-hidden="true"></i> <?php echo $comment->likes ?></a>
                 </div>
                 <div class="post-option">
                     <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>

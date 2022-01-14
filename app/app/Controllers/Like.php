@@ -21,7 +21,15 @@ class Like extends BaseController {
         $request = service("request");
         $request->uri->getPath();
 
-        // TODO: Validate post/comment id
-        // TODO: Redirect back to post 
+        $postId    = $request->getVar("post_id");
+        $commentId = $request->getVar("comment_id");
+        if(!$commentId && !$postId) {
+            echo "COMMENT ID OR POST ID MISSING!";
+            exit;
+        }
+        $this->likeModel->createLike($commentId, $postId);
+
+        # TODO: Validate post/comment id
+        # TODO: Redirect back to post 
     }
 }

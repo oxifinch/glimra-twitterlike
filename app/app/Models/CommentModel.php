@@ -7,14 +7,17 @@ class CommentModel extends Model {
     protected $db;
     private $session;
     public function __construct() {
-        $this->db = db_connect();
+        $this->db      = db_connect();
         $this->session = session();
     }
 
     public function getCommentsByPostId($postId) {
+        # TODO How to get username from an inner join?
         $query = $this->db->query("
-            SELECT *
+            SELECT comment.*, user.user_name
             FROM comment
+            INNER JOIN user
+            ON comment.user_id = user.user_id
             WHERE post_id = '$postId'
             ORDER BY comment_id ASC
         ");

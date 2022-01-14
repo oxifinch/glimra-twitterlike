@@ -20,7 +20,8 @@ class LikeModel extends Model {
             WHERE post_id = '$postId'
         ");
 
-        return $query->getResult();
+        #return $query->getResult();
+        return $query->getNumRows();
     }
 
     public function getLikesByCommentId($commentId) {
@@ -32,13 +33,35 @@ class LikeModel extends Model {
             WHERE comment_id = '$commentId'
         ");
 
-        return $query->getResult();
+        #return $query->getResult();
+        return $query->getNumRows();
     }
 
-    public function createLike($data) {
+    public function createLike($commentId, $postId) {
+        $userId = $this->session->get("user_id");
+        if(!$userId) {
+            return "[ERROR] User session not found!";
+        }
+
+        #echo "Comment:" . var_dump($commentId) . "<br>";
+        #echo "Post:"    . var_dump($postId)    . "<br>";
+        #echo "User ID:" . var_dump($userId)    . "<br>";
+
+        if($commentId == NULL) {
+            $commentId = "NULL";
+        }
+        if($postId == NULL) {
+            $postId = "NULL";
+        }
+
+        #$sql = "INSERT INTO reaction (comment_id, post_id, user_id) VALUES ($commentId, $postId, $userId)";
+        #echo $sql;
+        #exit;
+
         $query = $this->db->query("
-            INSERT INTO reaction
-            VALUES ($data->comment_id, $data->post_id, $data->user_id)
+            INSERT INTO reaction 
+            (comment_id, post_id, user_id) VALUES 
+            ($commentId, $postId, $userId)
         ");
     }
 
