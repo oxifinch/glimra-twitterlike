@@ -61,7 +61,7 @@
 ?>
 
 <?php 
-    echo view("/partials/commentForm");
+    echo view("/partials/commentForm", ["post" => $post]);
 ?>
 
         </section>
