@@ -2,13 +2,13 @@
         <header class="profile-header">
             <div class="profile-info">
                 <a href="#" class="image-container commenter-avatar"><img
-                        src="/assets/profileimgs/<?= $post->user_name[0] ?>.jpeg"
-                        alt="profile image for <?= $post->user_name?>" width="100" height="100"></a>
+                        src="/assets/profileimgs/<?= $comment->user_name[0] ?>.jpeg"
+                        alt="profile image for <?= $comment->user_name?>" width="100" height="100"></a>
                 <div class="list-container">
                     <ul class="remove-liststyle evenly-spaced-list">
-                        <li class="username"><?= $post->user_name ?></li>
+                        <li class="username"><?= $comment->user_name ?></li>
                         <li class="profile-name">
-                            <h4>@<?= $post->user_name ?></h4>
+                            <h4>@<?= $comment->user_name ?></h4>
                         </li>
                     </ul>
                 </div>
