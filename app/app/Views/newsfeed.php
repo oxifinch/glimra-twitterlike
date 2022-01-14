@@ -11,15 +11,13 @@
 
 <body>
 
-    <?=
-    $this->include("/partials/header");
-?>
+    <?= $this->include("/partials/header"); ?>
 
     <main>
         <?php
   foreach($posts as $post) { 
      echo view("/partials/post", ["post" => $post]);
-}
+  }
 ?>
 
 <div id="post-form-container" class="hidden">

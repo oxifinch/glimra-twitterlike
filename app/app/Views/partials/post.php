@@ -3,7 +3,7 @@
         <header class="profile-header">
             <div class="profile-info">
                 <a href="#" class="image-container commenter-avatar"><img
-                        src="/assets/profileimgs/<?= $post->user_name[0] ?>.jpeg"
+                        src="/assets/profileimgs/<?= $post->user_name[0] ?>.jpeg" 
                         alt="profile image for <?= $post->user_name?>" width="100" height="100"></a>
                 <div class="list-container">
                     <ul class="remove-liststyle evenly-spaced-list">
@@ -13,6 +13,7 @@
                         </li>
                     </ul>
                 </div>
+                <h2><?php echo $post->post_id ?> </h2>
                 <div class="header-aside">
                     <small class="post-date">GIVE DATE</small>
                 </div>
@@ -48,18 +49,11 @@
             </div>
 
             <!-- TODO fix this -->
-            <?php 
-    echo view("/partials/comment");
+<?php
+foreach($post->comments as $comment) {
+    echo view("/partials/comment", ["comment" => $comment]);
+}
 ?>
-
-            <?php 
-    echo view("/partials/comment");
-?>
-
-            <?php 
-    echo view("/partials/comment");
-?>
-
 <?php 
     echo view("/partials/commentForm", ["post" => $post]);
 ?>
