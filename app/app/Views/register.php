@@ -12,16 +12,15 @@
 </head>
 
 <body>
-
 <?=
     $this->include("/partials/header");
 ?>
-
+<main>
 <?=
    $this->include("/partials/registerPartial");
 ?>
 
 <script src="/javascript/header.js"></script>
-
+</main>
 </body>
 </html>

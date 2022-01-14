@@ -1,4 +1,4 @@
-    <section class="form-container module-container-invisible">
+    <section class="form-container module-container-background">
         <form action="/user/registerSave" method="POST" class="form-content">
             <div class="form-group">
                 <h2>Register to Glimma</h2>

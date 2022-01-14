@@ -1,6 +1,6 @@
    <!-- TODO make fix comment form -->
    <div class="comment-form-container">
-       <form action="comment/commentSave" method="POST" class="content-form-container">
+       <form action="/comment/commentSave" method="POST" class="content-form-container">
            <div class="form-toolbar-wrapper">
                <div class="textarea-container">
                <input type="hidden" name="post_id" value=<?php echo $post->post_id ?>>

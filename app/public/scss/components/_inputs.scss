@@ -58,28 +58,18 @@ input[type=password],
 }
 
 .form-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
+    background: none;
+    box-shadow: none;
     .form-content {
         width: 100%;
         max-width: 500px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        padding: inherit;
 
         .form-group {
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         .form-group-submit {
-            margin-top: 6rem;
+            margin-top: 4rem;
             text-align: center;
 
             .loginbtn {

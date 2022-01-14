@@ -18,9 +18,16 @@ class Comment extends BaseController {
     }
 
     public function commentSave() {
+        // TODO add this to validation.php
+        $userId = $this->session->get("user_id");
+        if ($userId == NULL) {
+            $errMessage = array(
+                'errMessageText' => 'Log into your account to take part glimmin\' discussions!'
+            );
+            return view("login", $errMessage);
+        }
         $request = service("request");
         $request->uri->getPath();
-
         $textContent = $request->getVar("text_content");
         if($textContent == NULL) {
             return false;
