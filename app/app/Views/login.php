@@ -12,16 +12,25 @@
 </head>
 
 <body>
-
     <?=
     $this->include("/partials/header");
 ?>
+<main>
 
+<?php
+  if(isset($errMessageText)) {
+    echo view("/partials/errorBox", ["errMessageText" => $errMessageText]);
+  }
+?>
+   
     <?=
    $this->include("/partials/loginPartial");
 ?>
 
     <script src="/javascript/header.js"></script>
+
+</main>
+
 </body>
 
 </html>

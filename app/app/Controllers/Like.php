@@ -18,6 +18,14 @@ class Like extends BaseController {
     }
 
     public function likeSave() {
+        // TODO add this to validation.php
+        $userId = $this->session->get("user_id");
+        if ($userId == NULL) {
+            $errMessage = array(
+                'errMessageText' => 'Want to like a post or comment? Log in!'
+            );
+            return view("login", $errMessage);
+        }
         $request = service("request");
         $request->uri->getPath();
 
